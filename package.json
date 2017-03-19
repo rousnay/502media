@@ -1,0 +1,48 @@
+{
+  "name": "502media",
+  "version": "1.0.0",
+  "description": "502media theme by 502 Media Group",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rousnay/502media.git"
+  },
+  "keywords": [
+    "wordpress",
+    "npm",
+    "bower",
+    "grunt",
+    "sass",
+    "git",
+    "bootstrap",
+    "autoprefixer",
+    "underscore"
+  ],
+  "author": "Md. Mozahidur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rousnay/502media/issues"
+  },
+  "homepage": "https://github.com/rousnay/502media#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-banner": "^0.6.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-parallel": "^0.5.1",
+    "grunt-sync": "^0.6.2",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0"
+  },
+  "dependencies": {}
+}

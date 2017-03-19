@@ -1,0 +1,37 @@
+html{
+	font-size: 14px;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	font-family: $font_theme, $font_backup;
+	// font-size: $font-size-base;
+	font-size: 100%;
+	font-size: 1rem;
+	line-height: $font__line-height-body;
+	color: $color_cw_grey;
+	// background-color: $body-bg;
+	-webkit-font-smoothing: none;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: $color__text-main;
+}
+
+
+@import "headings";
+
+@import "copy";
+
+@import "fonts";

@@ -1,0 +1,44 @@
+body.page-template-default{
+		h1{
+			font-size: 30px;
+			font-weight: bold;
+			color: $color_cw_black;
+		}
+		h2{
+			font-size: 24px;
+			font-weight: bold;
+			color: $color_cw_yellow;
+		}
+		h3{
+			font-size: 20px;
+			font-weight: bold;
+			color: $color_cw_blue;
+		}
+		h4{
+			font-size: 18px;
+			font-weight: 600;
+			color: $color_cw_black;
+			font-family: $font2;
+			font-style: italic;
+		}
+		h5{
+			font-size: 18px;
+			font-weight: bold;
+			color: $color_cw_yellow;
+			font-family: $font2;
+		}
+		h6{
+			font-size: 18px;
+			font-weight: bold;
+			color: $color_cw_grey;
+			font-family: $font2;
+		}
+		p{
+			font-size: 18px;
+			color: $color_cw_grey;
+			font-family: $font2;
+		}
+	footer#colophon {
+		margin-top: 40px;
+	}
+}

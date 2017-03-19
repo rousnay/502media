@@ -1,0 +1,31 @@
+header#masthead{
+    width: 100%;
+    background: #fff;
+}
+.sideheader-visible .tool-bar a{
+    color: $color_cw_grey;
+    .c-hamburger {
+        span, span:before, span:after{
+            background-color: $color_cw_grey;
+        }
+    }
+}
+header{
+    .container {
+        width: auto;
+        }
+        .site-header {
+            border-bottom: 1px solid #000;
+            padding-top: 20px;
+            padding-bottom: 5px;
+            div {
+                padding: 0;
+            }
+        }
+}
+@media (max-width: 991px){
+    header .site-header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}

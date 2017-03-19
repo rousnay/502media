@@ -1,0 +1,124 @@
+/***************
+Visual Composer
+***************/
+@media (max-width: 450px){
+	h1.vc_custom_heading.vc_custom_1472135245387 {
+		font-size: 50px!important;
+	}
+}
+
+@media (max-width: 1050px){
+	.vc_column_container {
+		padding-left: 15px!important;
+		padding-right: 15px!important;
+	}
+	h1.vc_custom_heading.vc_custom_1472135245387 {
+		font-size: 45px!important;
+	}
+	h1.vc_custom_heading.vc_custom_1472036895133 {
+		font-size: 35px!important;
+	}
+	h2.vc_custom_heading.vc_custom_1473169866798 {
+		font-size: 18px!important;
+	}
+}
+
+@media (max-width: 991px){
+	h1.vc_custom_heading.vc_custom_1472135245387 {
+		font-size: 40px!important;
+	}
+}
+
+@media (max-width: 767px){
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1470840905747.vc_row-has-fill {
+	    margin: 5px!important;
+	}
+	.vc_row.vc_column-gap-15>.vc_column_container {
+	    padding: 5px!important;
+	}
+}
+
+@media (max-width: 550px){
+	h1.vc_custom_heading.vc_custom_1472036895133 {
+		font-size: 25px!important;
+	}
+	h1.vc_custom_heading.vc_custom_1472135245387 {
+		font-size: 30px!important;
+	}
+	h2.vc_custom_heading.vc_custom_1473169866798 {
+		font-size: 16px!important;
+		line-height: inherit;
+	}
+	.ivan-custom-wrapper.theme_default.row-no-custom-ptop {
+		margin-top:30px!important;
+	}
+
+}
+
+@media (max-width: 400px){
+	h1.vc_custom_heading.vc_custom_1472135245387 {
+		font-size: 23px!important;
+	}
+	h1.vc_custom_heading.vc_custom_1472036895133 {
+		font-size: 22px!important;
+		margin-bottom: 5px!important;
+	}
+
+	h2.vc_custom_heading.vc_custom_1473169866798 {
+		font-size: 14px!important;
+	}
+
+}
+
+/***************
+Notification Bar
+***************/
+body.has-mtsnb {
+	padding-top: 0!important;
+}
+
+.mtsnb {
+	top: initial!important;
+	bottom: 0!important;
+}
+
+.mtsnb-hidden.mtsnb-top {
+	transform: translateY(100%) translate3d(0,0,0);
+}
+
+/***************
+ivan-carousel (owl)
+***************/
+// .ivan-carousel.vc_1453810117981{
+// 	overflow: visible!important;
+// 	.owl-controls {
+// 		.owl-buttons {
+// 			.owl-prev {
+// 				left: -25px!important;
+// 			}
+// 			.owl-next {
+// 				right: -25px!important;
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+.owl-theme .owl-controls .owl-buttons div {
+    color: $color_cw_blue!important;
+    font-size: 40px!important;
+    background-color: transparent!important;
+}
+
+/***************
+Editor style
+***************/
+body#tinymce{
+	.home-page-content p.risk-info {
+	    position: static;
+	    float: right;
+	    margin-top: 20px;
+	    max-width: 686px;
+	}
+}

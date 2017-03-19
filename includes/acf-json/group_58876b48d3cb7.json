@@ -1,0 +1,41 @@
+{
+    "key": "group_58876b48d3cb7",
+    "title": "Site Footer",
+    "fields": [
+        {
+            "key": "field_58876b59b51e6",
+            "label": "Footer Settings",
+            "name": "footer_settings",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "All the contents of the site footer area are controlled via Widgets, to modify the footer contents please go to Widget page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "cw-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 99,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1485270118
+}

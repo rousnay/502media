@@ -1,0 +1,286 @@
+/*--------------------------------------------------------------
+## pages
+--------------------------------------------------------------*/
+@import "pages";
+/*------------------------------------------------------------*/
+
+@media (max-width: 1100px){
+	.site-logo img {
+		max-width: 75%;
+	}
+	.site-header .form-area .emergency-form h4 {
+		font-size: 16px;
+		margin-top: 10px;
+		padding-left: 8px;
+	}
+	.site-header .form-area .emergency-form button {
+		font-size: 10px;
+		padding: 12px 14px;
+		margin-top: 4px;
+	}
+	.main-navigation #header-menu-con-id #header-menu-id > li > a {
+		font-size: 15px;
+	}
+
+	.main-navigation #header-menu-con-id #header-menu-id > .menu-item-has-children > .sub-menu li a {
+		font-size: 15px;
+	}
+	.main-navigation #header-menu-con-id #header-menu-id > .menu-item-has-children > .sub-menu li .sub-menu li a {
+		font-size: 14px;
+	}
+	.get-started h2 {
+		font-size: 25px;
+	}
+	.get-started .feature .blooks .feature-text {
+		font-size: 18px;
+		padding: 17px 0;
+	}
+    .get-started .feature .blooks .feature-icons {
+        zoom: 0.80;
+    }
+    .affiliation-logos h2 {
+      font-size: 25px;
+  }
+  #company-logo-slider {
+    max-width: 800px;
+}
+footer#colophon .informations .content-holder-half > div > div h4 {
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+footer#colophon .informations .content-holder-half > div > div button {
+  padding: 13px 25px;
+  font-size: 13px;
+}
+}
+
+@media (max-width: 991px){
+    .ms-layer {
+        width: 320px!important;
+    }
+    .ms-container h1 {
+        font-size: 2em;
+    }
+    .ms-container h3 {
+        font-size: 1.3em;
+    }
+    .site-header .form-area .emergency-form {
+        padding: 8px 7px;
+    }
+    .site-header .form-area .emergency-form h4 {
+        font-size: 13px;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+    .site-header .form-area .emergency-form button {
+        font-size: 10px;
+        padding: 9px 4px;
+        margin-top: 4px;
+    }
+    .site-header .logo-area {
+        padding: 19px 0 26px 6px;
+    }
+    .main-navigation #header-menu-con-id #header-menu-id > li > a {
+        font-size: 13px;
+    }
+    #header-menu-id > li > a {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .main-navigation #header-menu-con-id #header-menu-id > .menu-item-has-children > .sub-menu li a {
+        font-size: 14px;
+    }
+    .main-navigation #header-menu-con-id #header-menu-id > .menu-item-has-children > .sub-menu li .sub-menu li a {
+        font-size: 13px;
+    }
+    .get-started .feature .blooks .feature-icons {
+        zoom: 0.60;
+    }
+    .get-started .feature .blooks .feature-text {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .get-started h2 {
+        font-size: 20px;
+    }
+    .affiliation-logos h2 {
+        font-size: 20px;
+    }
+    #company-logo-slider {
+        max-width: 650px;
+    }
+    #logo-listing-isotope .affiliation-started h2 {
+        font-size: 20px!important;
+        margin-bottom: 20px!important;
+        margin-top: 20px!important;
+    }
+    #logo-listing-isotope .affiliation-started button {
+        font-size: 12px!important;
+        padding: 10px 20px!important;
+    }
+
+    footer#colophon .informations .content-holder-half {
+        padding: 46px 0 110px;
+    }
+    footer#colophon .informations .content-holder-half > div > div h4 {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    footer#colophon .informations .content-holder-half > div > div p {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+    }
+    footer#colophon .informations .content-holder-half > div > div ul li {
+        margin-top: 4.5px;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 799px){
+    .site-logo img {
+        max-width: 70%!important;
+    }
+}
+@media (max-width: 799px){
+    .ms-layer {
+        width: 300px!Important;
+    }
+    .site-header .form-area {
+        display: none;
+    }
+    .site-logo img {
+        max-width: 35%;
+    }
+    .site-header .logo-area {
+        padding: 15px 0px;
+    }
+    .header-menus {
+        display: none;
+    }
+    #company-logo-slider {
+        max-width: 600px;
+    }
+    body.page-template-default h1 {
+    font-size: 26px;
+    letter-spacing: 0px;
+    }
+    footer#colophon .informations .content-holder-half {
+        float: none;
+        padding: 37px 0 70px;
+    }
+    .location-map {
+        display: none;
+    }
+}
+
+@media (max-width: 650px){
+    .ms-layer {
+        width: 50%!Important;
+    }
+    .ms-container h1 {
+        font-size: 2.7em;
+    }
+    .ms-container h3 {
+        font-size: 1.6em;
+    }
+    .site-logo img {
+        max-width: 40%;
+    }
+    .get-started .feature .blooks .feature-icons {
+        zoom: 0.87;
+    }
+    #company-logo-slider {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 500px){
+    .ms-layer {
+        width: 60%!Important;
+        background-color: transparent!important;
+    }
+    .ms-container h1 {
+        font-size: 3.2em;
+    }
+    .ms-container h3 {
+        font-size: 2.2em;
+    }
+    .site-logo img {
+        max-width: 45%;
+    }
+    .get-started {
+        padding: 0;
+        padding-bottom: 25px;
+    }
+    .get-started .feature .blooks .feature-icons {
+        zoom: 0.75;
+    }
+    #company-logo-slider {
+        max-width: 450px;
+    }
+    .affiliation-logos .col-xs-12:nth-of-type(1){
+       display: none;
+   }
+   .affiliation-logos .col-xs-12:nth-of-type(2){
+       display: block;
+   }
+
+   div#logo-listing-isotope .isotope-item{
+    margin-bottom: 10px!important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#logo-listing-isotope .affiliation-started h2 {
+    font-size: 16px !important;
+    margin-bottom: 7px !important;
+    margin-top: 5px !important;
+}
+#logo-listing-isotope .affiliation-started button {
+    font-size: 12px !important;
+    padding: 7px 7px !important;
+}
+}
+
+@media (max-width: 400px){
+    .site-header .logo-area {
+        padding: 10px 0px;
+    }
+    .site-logo img {
+        max-width: 55%;
+    }
+    .get-started .feature .blooks .feature-icons {
+        zoom: 0.65;
+    }
+    footer#colophon .informations .content-holder-half {
+        padding-left: 15px;
+    }
+    footer#colophon .informations .quick-links {
+        float: none!important;
+        clear: both;
+        padding-top: 25px!important;
+        padding-bottom: 25px;
+    }
+    footer#colophon .informations .quick-links ul {
+        margin-left: 0!important;
+    }
+}
+
+@media (max-width: 350px){
+    .site-logo img {
+        max-width: 60%;
+    }
+    .get-started .feature {
+        margin-top: 32px;
+    }
+    .get-started .feature .blooks .feature-icons {
+        zoom: 0.7;
+    }
+    .affiliation-logos button {
+        font-size: 13px;
+        padding: 15px 25px;
+        letter-spacing: 1px;
+    }
+}

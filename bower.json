@@ -1,0 +1,56 @@
+{
+  "name": "cw",
+  "description": "cw theme by 502 Media Group",
+  "main": "index.php",
+  "authors": [
+    "Md. Mozahidur Rahman"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "npm",
+    "bower",
+    "grunt",
+    "sass",
+    "git",
+    "bootstrap",
+    "autoprefixer",
+    "underscore"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "homepage": "http://wittyplex.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src/components"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "material-menu": "https://github.com/callmenick/Material-Menu.git",
+    "bpopup": "https://github.com/dinbror/bpopup.git",
+    "animating-hamburger-icons": "https://github.com/callmenick/Animating-Hamburger-Icons.git",
+    "owl.carousel": "^2.1.6",
+    "perfect-scrollbar": "^0.6.12",
+    "matchHeight": "^0.7.0",
+    "elegant-icons": "*",
+    "normalize-css": "^4.2.0"
+  },
+  "resolutions": {
+    "font-awesome": "^4.6.3",
+    "owl.carousel": "^2.1.6",
+    "normalize-css": "^4.2.0"
+  },
+  "dependencies": {
+    "isotope": "^3.0.1",
+    "imagesloaded": "^4.1.0",
+    "gsap": "^1.19.0"
+  }
+}
