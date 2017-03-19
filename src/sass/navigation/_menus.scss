@@ -32,7 +32,7 @@
 			    margin-bottom: 10px;
 				&:hover > a,
 				&.focus > a {
-					color: $color_cw_yellow;
+					color: $color_theme_502media_yellow;
 				}
 			}
 			&:last-child{
@@ -159,7 +159,7 @@ button {
 }
 
 .mm-menu-toggle::after, .mm-menu-toggle::before {
-	background-color: $color_cw_yellow;
+	background-color: $color_theme_502media_yellow;
     transform-origin: initial;
         transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
@@ -169,7 +169,7 @@ button {
 // small manu items 
 
 nav#mm-menu button {
-    background: $color_cw_blue;
+    background: $color_theme_502media_blue;
     color:#ffffff;
     text-transform: uppercase;
     font-size: 13px;
@@ -224,7 +224,7 @@ nav#mm-menu button {
 	font-weight: bold;
 	padding: 10px 15px;
 	margin: 4px 0;
-    color: $color_cw_black;
+    color: $color_theme_502media_black;
     font-family: $font1;
     text-decoration: none;
     text-transform: uppercase;
@@ -232,7 +232,7 @@ nav#mm-menu button {
 }
 #mm-menu #header-menu-id > li > ul li > a{
 font-family: $font2;
-color: $color_cw_yellow;
+color: $color_theme_502media_yellow;
 font-size: 20px !important;
 padding: 5px 15px;
 }

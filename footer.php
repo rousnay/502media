@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package CW
+ * @package 502MEDIA
  */
 ?>
 
@@ -40,7 +40,7 @@
 	<!-- MENU FOR SMALL SCREEN -->
 	<nav id="mm-menu" class="mm-menu">
 		<button> Submit A Claim </button>
-		<?php cw_header_menu(); ?>
+		<?php theme_502media_header_menu(); ?>
 	</nav><!-- nav -->
 	<?php wp_footer(); ?>
 	<script type="text/javascript">

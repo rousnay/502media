@@ -4,15 +4,15 @@
  * Register All Menus
  *
  */
-function cw_menus() {
+function theme_502media_menus() {
     register_nav_menus(
         array(
-            'header-menu' => __( 'Header menu' , 'nav menu location', 'cw')
+            'header-menu' => __( 'Header menu' , 'nav menu location', 'theme_502media')
             )
         );
 }
 
-add_action( 'init', 'cw_menus' );
+add_action( 'init', 'theme_502media_menus' );
 
 /*
  * Menus Settings
@@ -20,7 +20,7 @@ add_action( 'init', 'cw_menus' );
  */
 
 //Header menu
-function cw_header_menu() {
+function theme_502media_header_menu() {
     if ( has_nav_menu( 'header-menu' ) ) {
     wp_nav_menu(
         array(

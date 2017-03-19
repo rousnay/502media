@@ -122,7 +122,7 @@ uglify: {
   my_target: {
     files: [{
       expand: true,
-      cwd: 'js',
+      theme_502mediad: 'js',
       src: ['*.js', '!*.min.js'],
       dest: 'js',
       ext: '.min.js'
@@ -180,7 +180,7 @@ browserSync: {
 
     options: {
       watchTask: true,
-      proxy: 'http://192.168.0.104/502mediagroup/C&W/'
+      proxy: 'http://192.168.0.104/theme_502mediagroup/theme_502media/'
     }
   }
 },

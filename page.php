@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package CW
+ * @package 502MEDIA
  */
 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 <div id="primary" class="site-content full-width">
 	<main id="main" class="site-main" role="main">
 		<?php if( has_post_thumbnail() ): 
-		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'cw_feature_img');
+		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
 		$url_feature = $thumb_feature[0]; ?> 
 		<section class="container page-banner" style="background-image: url('<?php echo $url_feature; ?>');">
 			<div class="row content-holder">

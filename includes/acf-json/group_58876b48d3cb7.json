@@ -25,7 +25,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "cw-general-settings"
+                "value": "theme_502media-general-settings"
             }
         ]
     ],

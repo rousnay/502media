@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package CW
+ * @package 502MEDIA
  */
 
 ?><!DOCTYPE html>
@@ -19,9 +19,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body id="cw-wp" <?php body_class(); ?>>
+<body id="theme_502media-wp" <?php body_class(); ?>>
 	<div id="page" class="site content-wrapper">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cw' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'theme_502media' ); ?></a>
 		<header id="masthead" class="site-header panel-top panel-fixed" role="banner">
 			<div class="container">
 				<div class="row content-holder">
@@ -40,7 +40,7 @@
 				<div class="row header-menus">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<div class="col-md-12 hidden--xs hidden--sm menu-area">
-							<?php cw_header_menu(); ?>
+							<?php theme_502media_header_menu(); ?>
 						</div>
 					</nav><!-- #site-navigation -->
 				</div>

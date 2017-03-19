@@ -6,7 +6,7 @@
 }
 ::selection { 
 	color: #ffffff!important;
-	background: $color_cw_yellow !important;
+	background: $color_theme_502media_yellow !important;
 }
 section.page-banner{
 	background-repeat: no-repeat;
@@ -22,7 +22,7 @@ section.page-banner{
 	.banner-card {
 		position: absolute;
 		max-width: 516px;
-		background: $color_cw_yellow;
+		background: $color_theme_502media_yellow;
 		background: -webkit-linear-gradient(left, #bcab7a , #938055); 
 		background: -o-linear-gradient(right, #bcab7a , #938055);
 		background: -moz-linear-gradient(right, #bcab7a , #938055);
@@ -121,14 +121,14 @@ body{
 .ms-container{
 	h1{
 		font-family: "CeraBasic", Arial, Helvetica, sans-serif;
-		color: $color_cw_white;
+		color: $color_theme_502media_white;
 		font-weight: bold;
 		letter-spacing: 1px;
 		font-size: 1.8em;
 	}
 	h3{
 		font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-		color: $color_cw_white;
+		color: $color_theme_502media_white;
 		font-weight: 300;
 		letter-spacing: 0.7px;
 		font-size: 1em;
@@ -145,7 +145,7 @@ body{
 				border-radius:50%;
 			}
 			.ms-bullet-selected{
-				background-color: $color_cw_yellow !important;
+				background-color: $color_theme_502media_yellow !important;
 			}
 		}
 

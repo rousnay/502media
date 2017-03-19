@@ -403,7 +403,7 @@ function image_size_names_choose( $sizes )
 				$title = $k;
 				$title = str_replace('-', ' ', $title);
 				$title = str_replace('_', ' ', $title);
-				$title = ucwords( $title );
+				$title = utheme_502mediaords( $title );
 				
 				$sizes[ $k ] = $title;
 			}

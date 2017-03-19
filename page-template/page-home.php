@@ -2,7 +2,7 @@
 /**
 * Template Name: Home
 *
-* @package CW
+* @package 502MEDIA
 */
 get_header(); ?>
 

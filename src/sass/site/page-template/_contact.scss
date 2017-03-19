@@ -33,7 +33,7 @@
     }
     &.gf_step_active{
       .gf_step_label{
-       color: $color_cw_yellow;
+       color: $color_theme_502media_yellow;
      }
    }
  }
@@ -90,10 +90,10 @@
       width: initial!important;
       text-transform: uppercase;
       border: none;
-      background-color: $color_cw_yellow !important;
+      background-color: $color_theme_502media_yellow !important;
       &:hover{
         background-color: #938055 !important;
-        color: $color_cw_white !important;
+        color: $color_theme_502media_white !important;
       }
     }
   }
@@ -125,14 +125,14 @@
         input[type=radio] {
           display: none;
           &:checked + label{
-            color: $color_cw_yellow;
+            color: $color_theme_502media_yellow;
             &:before {
               content: "\2022";
-              color: $color_cw_yellow;
+              color: $color_theme_502media_yellow;
               font-size: 26px;
               text-align: center;
               line-height: 7px;
-              border: 1px solid $color_cw_yellow;
+              border: 1px solid $color_theme_502media_yellow;
             }
           }
         }
@@ -169,17 +169,17 @@
     padding-left: 0!important;
     border-bottom: 1px solid #c0bbc0;
     &:focus{
-      color: $color_cw_yellow !important;
-      border-bottom: 1px solid $color_cw_yellow;
+      color: $color_theme_502media_yellow !important;
+      border-bottom: 1px solid $color_theme_502media_yellow;
     }
   } //input[type=text]
   select {
     outline: none;
-    border: 2px solid $color_cw_yellow;
+    border: 2px solid $color_theme_502media_yellow;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: $color_cw_yellow;
+    color: $color_theme_502media_yellow;
     font-family: $font2;
     font-size: 14px;
     line-height: 30px;
@@ -193,8 +193,8 @@
     background-position: center;
     background-position-x: 96%;
     &:focus{
-      color: $color_cw_yellow;
-      border-bottom: 1px solid $color_cw_yellow;
+      color: $color_theme_502media_yellow;
+      border-bottom: 1px solid $color_theme_502media_yellow;
     }
   } //select
 
@@ -206,14 +206,14 @@
       input[type=checkbox] {
         display: none;
         &:checked + label{
-          color: $color_cw_yellow;
+          color: $color_theme_502media_yellow;
           &:before {
             content: "\2713";
             font-size: 16px;
-            color: $color_cw_yellow;
+            color: $color_theme_502media_yellow;
             text-align: center;
             line-height: 13px;
-            border: 1px solid $color_cw_yellow;
+            border: 1px solid $color_theme_502media_yellow;
           }
         }
       }
@@ -248,7 +248,7 @@
   font-size: 16px;
   textarea {
     padding: 15px 25px;
-    border: 2px solid $color_cw_yellow;
+    border: 2px solid $color_theme_502media_yellow;
   }
 }//ginput_container_textarea
 
@@ -267,7 +267,7 @@
     z-index: -1;
   }
   label{
-    border: 2px solid $color_cw_yellow;
+    border: 2px solid $color_theme_502media_yellow;
     padding: 8px 45px;
     width: 50%;
     font-size: 14px;
@@ -275,7 +275,7 @@
     font-family: $font2;
     letter-spacing: 1px;
     text-align: center;
-    color: $color_cw_yellow;
+    color: $color_theme_502media_yellow;
     background-color: transparent;
     background: url(images/icon-upload-gray.png);
     background-repeat: no-repeat;
@@ -422,8 +422,8 @@
     margin-top: 41px!important;
     background: none!important;
     &:focus{
-      color: $color_cw_yellow !important;
-      border-bottom: 1px solid $color_cw_yellow !important;
+      color: $color_theme_502media_yellow !important;
+      border-bottom: 1px solid $color_theme_502media_yellow !important;
     }
   } //select
 }

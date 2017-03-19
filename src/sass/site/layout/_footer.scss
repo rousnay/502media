@@ -41,18 +41,18 @@ footer#colophon {
                 }
                 button{
                     background-color:transparent;
-                    border:2px solid $color_cw_yellow;
+                    border:2px solid $color_theme_502media_yellow;
                     padding:14px 28px;
                     a {
                     text-transform:uppercase;
-                    color:$color_cw_yellow;
+                    color:$color_theme_502media_yellow;
                     font-size:14px;
                     font-weight:600;
                     font-family: $font2;
 
                     }
                     &:hover, &:focus {
-                        background-color: $color_cw_yellow;
+                        background-color: $color_theme_502media_yellow;
                         a{
                           color:#464446  
                         }
@@ -68,7 +68,7 @@ footer#colophon {
             a{
                 color: #ffffff;
                 &:hover{
-                    color: $color_cw_yellow;
+                    color: $color_theme_502media_yellow;
                 }
             }
         }

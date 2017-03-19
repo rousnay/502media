@@ -9,7 +9,7 @@
       padding-right: 23px;
       padding-left: 28px;
       .emergency-form{
-        background-color: $color_cw_blue;
+        background-color: $color_theme_502media_blue;
         padding: 17px 15px;
         overflow: hidden;
         box-shadow: 0px 17px 13px -14px rgba(0,0,0,0.22);
@@ -22,8 +22,8 @@
           padding-left: 12px;
         }
         button{
-          background-color: $color_cw_white;
-          color: $color_cw_black;
+          background-color: $color_theme_502media_white;
+          color: $color_theme_502media_black;
           font-family: 'ProximaNova', sans-serif;
           font-size: 12px;
           float: right;
@@ -113,11 +113,11 @@
 }
 
 button{
-  background-color: $color_cw_yellow;
+  background-color: $color_theme_502media_yellow;
   margin: 20px auto;
   padding: 17px 25px;
   a{
-  color: $color_cw_white;
+  color: $color_theme_502media_white;
   font-size: 14px;
   font-family: $font2;
   letter-spacing: 2px;
@@ -144,7 +144,7 @@ button{
           h2{
             font-size: 24px;
             font-weight: bold;
-            color: $color_cw_black;
+            color: $color_theme_502media_black;
             margin-bottom: 30px;
             margin-top: 30px;
           }

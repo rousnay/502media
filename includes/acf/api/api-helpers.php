@@ -931,7 +931,7 @@ function acf_get_image_sizes() {
 			
 			// append to array
 			$label = str_replace('-', ' ', $size);
-			$label = ucwords( $label );
+			$label = utheme_502mediaords( $label );
 			$sizes[ $size ] = $label;
 			
 		}

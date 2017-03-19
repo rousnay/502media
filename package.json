@@ -1,11 +1,11 @@
 {
-  "name": "502media",
+  "name": "theme_502media",
   "version": "1.0.0",
-  "description": "502media theme by 502 Media Group",
+  "description": "theme_502media theme by 502 Media Group",
   "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rousnay/502media.git"
+    "url": "git+https://github.com/rousnay/theme_502media.git"
   },
   "keywords": [
     "wordpress",
@@ -21,9 +21,9 @@
   "author": "Md. Mozahidur Rahman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rousnay/502media/issues"
+    "url": "https://github.com/rousnay/theme_502media/issues"
   },
-  "homepage": "https://github.com/rousnay/502media#readme",
+  "homepage": "https://github.com/rousnay/theme_502media#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.3",

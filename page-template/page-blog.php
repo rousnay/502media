@@ -2,14 +2,14 @@
 /**
  * Template Name: Blog/News
  *
- * @package CW
+ * @package 502MEDIA
  */
 get_header(); ?>
 
 <div id="content" class="site-content full-width">
 	<main id="main" class="site-main" role="main">
 		<?php if( has_post_thumbnail() ): 
-		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'cw_feature_img');
+		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
 		$url_feature = $thumb_feature[0];?> 
 		<section class="container page-banner" style="background-image: url('<?php echo $url_feature; ?>');">
 			<div class="row content-holder">
@@ -74,7 +74,7 @@ get_header(); ?>
 					endif; ?>
 
 					<?php
-					$post_thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'cw_blog_listing');
+					$post_thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_blog_listing');
 					$thumb_url	= $post_thumb[0];
 					$post_url	= get_permalink();
 					$content 	= get_the_content();

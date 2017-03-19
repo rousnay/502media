@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package CW
+ * @package 502MEDIA
  */
 
 get_header(); ?>

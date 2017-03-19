@@ -24,7 +24,7 @@ Ninja Forms
 .ninja-forms-form-wrap {
 	form {
 		input[type=submit] {
-		    background: $color_cw_yellow !important;
+		    background: $color_theme_502media_yellow !important;
 		    float: left;
 		    letter-spacing: 1px;
 		    width: auto;
@@ -32,12 +32,12 @@ Ninja Forms
 		    transition: all 0.3s ease-out;
 		    border: none;
 		    &:hover, &:focus, &:active{
-				background: $color_cw_yellow !important;
+				background: $color_theme_502media_yellow !important;
 				color: #ffffff!important;
 		    }
 		}
 		input:hover, textarea:hover, input:focus, textarea:focus{
-		    border-color: $color_cw_yellow !important;
+		    border-color: $color_theme_502media_yellow !important;
 		}
 	}
 }

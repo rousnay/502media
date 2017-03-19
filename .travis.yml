@@ -1,8 +1,8 @@
-# Travis CI (MIT License) configuration file for the CW WordPress theme.
+# Travis CI (MIT License) configuration file for the 502MEDIA WordPress theme.
 # @link https://travis-ci.org/
 
-# For use with the CW WordPress theme.
-# @link https://github.com/rousnay/cw
+# For use with the 502MEDIA WordPress theme.
+# @link https://github.com/rousnay/theme_502media
 
 # Declare project language.
 # @link http://about.travis-ci.org/docs/user/languages/php/

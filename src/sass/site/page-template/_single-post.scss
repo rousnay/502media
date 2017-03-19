@@ -14,47 +14,47 @@ header.entry-header h1{
 span.edit-link a {
 	display:none;
 	margin-left: 10px;
-	color: $color_cw_blue;
+	color: $color_theme_502media_blue;
 }
 body.single-post{
 	.single-post-contents{
 		h1{
 			font-size: 30px;
 			font-weight: bold;
-			color: $color_cw_black;
+			color: $color_theme_502media_black;
 		}
 		h2{
 			font-size: 24px;
 			font-weight: bold;
-			color: $color_cw_yellow;
+			color: $color_theme_502media_yellow;
 		}
 		h3{
 			font-size: 20px;
 			font-weight: bold;
-			color: $color_cw_blue;
+			color: $color_theme_502media_blue;
 		}
 		h4{
 			font-size: 18px;
 			font-weight: 600;
-			color: $color_cw_black;
+			color: $color_theme_502media_black;
 			font-family: $font2;
 			font-style: italic;
 		}
 		h5{
 			font-size: 18px;
 			font-weight: bold;
-			color: $color_cw_yellow;
+			color: $color_theme_502media_yellow;
 			font-family: $font2;
 		}
 		h6{
 			font-size: 18px;
 			font-weight: bold;
-			color: $color_cw_grey;
+			color: $color_theme_502media_grey;
 			font-family: $font2;
 		}
 		p{
 			font-size: 18px;
-			color: $color_cw_grey;
+			color: $color_theme_502media_grey;
 			font-family: $font2;
 		}
 
@@ -84,7 +84,7 @@ body.single-post{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background:$color_cw_gradient;
+		background:$color_theme_502media_gradient;
 		opacity: 0;
 		transition: opacity 500ms ease-in-out;
 	}
@@ -97,9 +97,9 @@ body.single-post{
 		font-size: 16px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		color: $color_cw_yellow !important;
+		color: $color_theme_502media_yellow !important;
 		a{
-			color: $color_cw_yellow !important;
+			color: $color_theme_502media_yellow !important;
 		}
 	}
 }
@@ -125,7 +125,7 @@ body.single-post{
 	}
 	.current, a:hover{
 		color:#fff;
-		background-color: $color_cw_blue;
+		background-color: $color_theme_502media_blue;
 	}
 }
 //Read More

@@ -61,9 +61,9 @@ function my_acf_json_load_point( $paths ) {
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-		'page_title' 	=> 'CW General Settings',
+		'page_title' 	=> '502MEDIA General Settings',
 		'menu_title'	=> 'Theme Settings',
-		'menu_slug' 	=> 'cw-general-settings',
+		'menu_slug' 	=> 'theme_502media-general-settings',
 		'capability'	=> 'edit_posts',
 		'parent_slug'	=> '',
 		'redirect'		=> false,
@@ -74,6 +74,6 @@ if( function_exists('acf_add_options_page') ) {
 		'page_title' 	=> 'Affiliations Slider',
 		'menu_title'	=> 'Affiliations Slider',
 		'menu_slug' 	=> 'affiliations-slider',
-		'parent_slug'	=> 'cw-general-settings',
+		'parent_slug'	=> 'theme_502media-general-settings',
 		));
 }

@@ -2,14 +2,14 @@
 /**
  * Template Name: Contact
  *
- * @package CW
+ * @package 502MEDIA
  */
 get_header(); ?>
 
 <div id="content" class="site-content full-width">
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); //START the_post query
-		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'cw_feature_img');
+		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
 		$url_feature = $thumb_feature[0]; ?>
 
 		<section class="container page-banner" style="background-image: url('<?php echo $url_feature; ?>');">
