@@ -180,7 +180,7 @@ browserSync: {
 
     options: {
       watchTask: true,
-      proxy: 'http://192.168.0.104/theme_502mediagroup/theme_502media/'
+      proxy: 'http://192.168.0.104/502mediagroup/502media/'
     }
   }
 },
