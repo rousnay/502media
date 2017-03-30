@@ -30,12 +30,6 @@
 							<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 						</a>
 					</div>
-					<div class="col-sm-6 form-area">
-						<div class="emergency-form">
-							<h4><?php the_field('header_text','option'); ?></h4>
-							<button class="submit-claim"> <a href="<?php the_field('button_link','option'); ?>"><?php the_field('button_text','option'); ?></a></button>
-						</div>
-					</div>
 				</div>
 				<div class="row header-menus">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
