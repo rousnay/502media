@@ -36,12 +36,7 @@
 	</section>
 </footer><!-- footer -->
 </div><!-- #page -->
-<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
-<!-- MENU FOR SMALL SCREEN -->
-<nav id="mm-menu" class="mm-menu">
-	<button> Submit A Claim </button>
-	<?php theme_502media_header_menu(); ?>
-</nav><!-- nav -->
+
 <?php wp_footer(); ?>
 <script type="text/javascript">
 	//Fix the position of toggle menu icon

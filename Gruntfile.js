@@ -32,7 +32,8 @@ sass:{
   dev: {
     options: {
       style: 'expanded',
-      lineNumbers: true
+      lineNumbers: true,
+      sourcemap: 'file'
       },
       files:{
         'style.css' : 'src/sass/styles.scss'

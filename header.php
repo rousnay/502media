@@ -20,6 +20,17 @@
 </head>
 
 <body id="theme_502media-wp" <?php body_class(); ?>>
+	<div id="sideheader">
+		<div class="sidebar-inner">
+			<div class="push_sidebar">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="col-md-12 hidden--xs hidden--sm menu-area">
+						<?php theme_502media_header_menu(); ?>
+					</div>
+				</nav><!-- #site-navigation -->
+			</div>
+		</div>
+	</div>
 	<div id="page" class="site content-wrapper">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'theme_502media' ); ?></a>
 		<header id="masthead" class="site-header panel-top panel-fixed" role="banner">
@@ -32,11 +43,7 @@
 					</div>
 				</div>
 				<div class="row header-menus">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<div class="col-md-12 hidden--xs hidden--sm menu-area">
-							<?php theme_502media_header_menu(); ?>
-						</div>
-					</nav><!-- #site-navigation -->
+					<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
 				</div>
 			</div>
 		</header><!-- #masthead -->

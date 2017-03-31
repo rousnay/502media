@@ -1,11 +1,44 @@
 /********
   Home
   *********/
-  .site-header{
+  body.page-template-page-home {
+
+    .site-header{
     .logo-area{
       padding: 26px 0 26px 3px;
     }
   }
+
+ &.gradient-bg
+{
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+#masthead{
+
+}
+.site-content{
+  background-color: transparent!important;
+}
+.banner-text{
+  max-width: 750px;
+  margin: auto auto;
+  h1{
+      font-size: 54px;
+      color: #ffffff;
+      visibility: hidden;
+      text-align: center;
+      // transition: visibility 3500ms ease-in-out;
+  }
+}
+
+}
+
+
 /***********
   Affiliations
   ************/

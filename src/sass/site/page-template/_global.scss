@@ -1,13 +1,137 @@
-.page-header{ //repalce botstrap style
-	margin:0;
-	padding:0;
-	border: none;
 
-}
 ::selection { 
 	color: #ffffff!important;
 	background: $color_theme_502media_yellow !important;
 }
+body{
+	&:not(.page-template-page-home){
+		#page {
+			width: 100%!important;
+			min-height: 100vh;
+			background-color: #fff;
+		}
+		section{
+			header, footer{
+				display: none;
+			}
+		}
+	}
+	
+	&.page-template-page-philosophy, &.page-template-default{
+		header#masthead {
+			padding-bottom: 35px;
+		}
+	}
+	&.page-template-page-vc, &.page-template-page-hard-coded{
+		header#masthead {
+			margin-bottom: 5px;
+		}
+		.site-content {
+			margin: 0 -35px!important;
+		}
+	}
+}
+.container{
+	width:100%!important;
+}
+
+
+.full-width {
+	width: 100%!important;
+}
+.content-holder {
+	width: 100%!important;
+	max-width: 1070px!important;
+	margin: 0 auto;
+}
+.content-holder-half {
+	width: 100%!important;
+	max-width: 520px!important;
+	margin: 0 auto;
+	& > div{
+		padding: 0!important;
+	}
+}
+.left-sidebar {
+	margin-top: 22px;
+	padding-left: 0!important;
+}
+
+#sideheader {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  width: 300px;
+  padding: 50px 35px;
+  z-index: 0;
+  background: #424d4d;
+  color: white;
+  overflow: auto;
+  //backface-visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+  	&.is-visible {
+	  transform: translateX(0);
+	  //display: block;
+	}
+	.buttons.gray:hover {
+		background:#f00 !important;
+	    a,i{
+	    	color: #fff;
+	    }
+	}
+}
+
+.push_sidebar {
+    padding-top: 15px;
+
+}
+
+.page-header {
+	margin:0;//repalce botstrap style
+	padding:0;//repalce botstrap style
+	border: none;//repalce botstrap style
+
+	text-align: center;
+	padding-bottom: 32px;
+	h1{
+		font-size: 30px;
+		font-weight: bold;
+		font-family: $font1;
+		margin-top: 37px;
+		letter-spacing: 1.5px;
+	}
+	h4{
+		font-size: 18px;
+		font-family: $font2;
+		line-height: 21px;
+		max-width: 620px;
+		margin: 14px auto;
+		padding: 0 15px;
+	}
+}
+.page-contents {
+	position: relative;
+}
+
+.content-wrapper {
+	position: relative;
+	transform: translateX(0);
+	transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+}
+
+.sideheader-visible {
+	.content-wrapper {
+		transform: translateX(-300px);
+		&:after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
 section.page-banner{
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -46,77 +170,6 @@ section.page-banner{
 	}
 }
 
-.page-header {
-	text-align: center;
-	padding-bottom: 32px;
-	h1{
-		font-size: 30px;
-		font-weight: bold;
-		font-family: $font1;
-		margin-top: 37px;
-		letter-spacing: 1.5px;
-	}
-	h4{
-		font-size: 18px;
-		font-family: $font2;
-		line-height: 21px;
-		max-width: 620px;
-		margin: 14px auto;
-		padding: 0 15px;
-	}
-}
-.page-contents {
-	position: relative;
-}
-
-body{
-	&:not(.page-template-page-home){
-		section{
-			header, footer{
-				display: none;
-			}
-		}
-	}
-	&.page-template-page-philosophy, &.page-template-default{
-		header#masthead {
-			padding-bottom: 35px;
-		}
-	}
-	&.page-template-page-vc, &.page-template-page-hard-coded{
-		header#masthead {
-			margin-bottom: 5px;
-		}
-		.site-content {
-			margin: 0 -35px!important;
-		}
-	}
-}
-.container{
-	width:100%!important;
-}
-#page {
-	width: 100%!important;
-}
-.full-width {
-	width: 100%!important;
-}
-.content-holder {
-	width: 100%!important;
-	max-width: 1070px!important;
-	margin: 0 auto;
-}
-.content-holder-half {
-	width: 100%!important;
-	max-width: 520px!important;
-	margin: 0 auto;
-	& > div{
-		padding: 0!important;
-	}
-}
-.left-sidebar {
-	margin-top: 22px;
-	padding-left: 0!important;
-}
 //Main slider (MS)
 .ms-container{
 	h1{
@@ -194,29 +247,6 @@ body{
 			right: 0px !important;
 			background-position-x: 3px;
 		}
-	}
-}
-
-//Sidebar Push Slider
-.content-wrapper {
-	position: relative;
-	transform: translateX(0);
-	transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-}
-#mm-menu-toggle{
-	transform: translateX(0);
-	transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-}
-.sideheader-visible {
-	.content-wrapper {
-		transform: translateX(-300px);
-		&:after {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-	#mm-menu-toggle{
-		transform: translateX(-300px);
 	}
 }
 

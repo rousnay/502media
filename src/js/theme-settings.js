@@ -1,12 +1,52 @@
 ( function( $ ) {
 
-	/******************************
-	 Header and Menu
-	 ******************************/
-	 // jQuery('#mm-menu li').addClass("mm-menu__item");
-	 // jQuery('#mm-menu a').addClass("mm-menu__link");
-	 // jQuery('#mm-menu a span').addClass("mm-menu__link-text");
-	 var menu = new Menu;
+  /******************************
+   Sidebar Push Slide
+   ******************************/
+   function sideHeaderInit() {
+   	var sideheader = jQuery('#sideheader');
+   	if (sideheader.length) {
+   		sideheader.perfectScrollbar();
+      //sideheader.hide();
+      jQuery('#mm-menu-toggle').on('click', function(event) {
+      	event.preventDefault();
+      	event.stopPropagation();
+
+      	if ($(sideheader).is('.is-visible')) {
+      		$(sideheader).removeClass('is-visible');
+      		sideheader.hide(900);
+      	}
+      	else{
+      		$(sideheader).addClass('is-visible');
+      		sideheader.show();
+      	}
+
+
+      	jQuery('body').toggleClass('sideheader-visible');
+      });
+
+      jQuery(document).on('click', function(e) {
+
+      	var _element = sideheader;
+
+        if (!_element.is(e.target) // if the target of the click isn't the container...
+          && _element.has(e.target).length === 0 ) // ... nor a descendant of the container
+        {
+        	sideheader.removeClass('is-visible');
+        	sideheader.hide(900);
+        	jQuery('body').removeClass('sideheader-visible');
+        }
+    });
+
+      jQuery(window).on('scroll', function(e) {
+      	sideheader.removeClass('is-visible');
+      	sideheader.hide(900);
+      	jQuery('body').removeClass('sideheader-visible');
+      });
+  };
+}
+/* Calls Sideheader Init script  */
+sideHeaderInit();
 
 
 	/******************************
@@ -92,9 +132,76 @@
 	/******************************
 	 Library: perfect-scrollbar
 	 ******************************/
-	 $('#mm-menu').perfectScrollbar();
+	 // $('#mm-menu').perfectScrollbar();
 
-	 
+
+/******************
+Backgroud Gradient
+******************/
+$('body.page-template-page-home').addClass('gradient-bg')
+
+var colors = new Array(
+	[62,35,255],
+	[60,255,60],
+	[255,35,98],
+	[45,175,230],
+	[255,0,255],
+	[255,128,0]);
+
+var step = 0;
+//color table indices for: 
+// current color left
+// next color left
+// current color right
+// next color right
+var colorIndices = [0,1,2,3];
+
+//transition speed
+var gradientSpeed = 0.002;
+
+function updateGradient()
+{
+	
+	if ( $===undefined ) return;
+	
+	var c0_0 = colors[colorIndices[0]];
+	var c0_1 = colors[colorIndices[1]];
+	var c1_0 = colors[colorIndices[2]];
+	var c1_1 = colors[colorIndices[3]];
+
+	var istep = 1 - step;
+	var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+	var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+	var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+	var color1 = "rgb("+r1+","+g1+","+b1+")";
+
+	var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+	var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+	var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+	var color2 = "rgb("+r2+","+g2+","+b2+")";
+
+	$('.gradient-bg').css({
+		background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+			background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+		
+		step += gradientSpeed;
+		if ( step >= 1 )
+		{
+			step %= 1;
+			colorIndices[0] = colorIndices[1];
+			colorIndices[2] = colorIndices[3];
+			
+    //pick two new target color indices
+    //do not pick the same as the current one
+    colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    
+}
+}
+
+setInterval(updateGradient,10);
+
+
     /******************************
 	 Other settings
 	 ******************************/
@@ -119,198 +226,42 @@
 	 		equal_size();
 	 	});
 	 };
+	 
+// home_banner_adjustment
 
+function home_banner_adjustment() {
+	var headerHeight = 0;
+	var bannerHeight = 0;
+	var bannerHalfHeight = 0;
+	var containerHeight = 0;
+	var bannerPosition = 0;
+	var bannerTop = 0;
+	var bannerTopMargin = 0;
 
-    /******************************
-	 Accordion Menu
-	 ******************************/
-	 $('#mm-menu .header-menu-con-cl > ul > li:has(ul)').addClass("has-sub");
-	 $('#mm-menu .header-menu-con-cl > ul > li > a').click(function() {
-	 	var checkElement = $(this).next();
-	 	
-	 	$('#mm-menu .header-menu-con-cl > ul > li').removeClass('active');
-	 	$(this).closest('li').addClass('active');	
-	 	
-	 	
-	 	if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-	 		$(this).closest('li').removeClass('active');
-	 		checkElement.slideUp('normal');
-	 	}
-	 	
-	 	if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-	 		$('#mm-menu .header-menu-con-cl > ul > li > ul:visible').slideUp('normal');
-	 		checkElement.slideDown('normal');
-	 	}
-	 	
-	 	if (checkElement.is('ul')) {
-	 		return false;
-	 	} else {
-	 		return true;	
-	 	}		
-	 });
+	headerHeight =  $('#masthead').height();
+	bannerHeight =  $('.banner-text').height();
+	containerHeight = $( window ).height();
 
-	 $('#mm-menu .header-menu-con-cl > ul > li > ul > li:has(ul)').addClass("has-sub");
-	 $('#mm-menu .header-menu-con-cl > ul > li > ul > li > a').click(function() {
-	 	var checkElement = $(this).next();
-	 	
-	 	$('#mm-menu .header-menu-con-cl > ul > li > ul > li').removeClass('active');
-	 	$(this).closest('li').addClass('active'); 
-	 	
-	 	
-	 	if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-	 		$(this).closest('li').removeClass('active');
-	 		checkElement.slideUp('normal');
-	 	}
-	 	
-	 	if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-	 		$('#mm-menu .header-menu-con-cl > ul > li > ul > li > ul:visible').slideUp('normal');
-	 		checkElement.slideDown('normal');
-	 	}
-	 	
-	 	if (checkElement.is('ul')) {
-	 		return false;
-	 	} else {
-	 		return true;  
-	 	}   
-	 });
+	bannerHalfHeight = bannerHeight/2;
+	bannerPosition = (containerHeight/2) - bannerHalfHeight;
+	bannerTop = bannerPosition - headerHeight
+	bannerTopMargin = parseInt(bannerTop, 10);
 
+	$('.banner-text').css("marginTop",bannerTopMargin);
 
+	console.log(bannerHeight);
+	console.log(bannerPosition);
 
-
-
-/***
-Google Map Settings
-***/
-if (typeof google != 'undefined') {
-
-	var map;
-	var myMap = new google.maps.LatLng(39.17921655074796, -96.56454560000003);
-	var myMapIcon = new google.maps.LatLng(39.17921655074796, -96.56454560000003);
-
- //The CenterControl adds a control to the map that recenters the map on myMap.
- function CenterControl(controlDiv, map) {
-
-  // Set CSS for the control border
-  var controlUI = document.createElement('div');
-  controlUI.style.backgroundColor = '#403f40';
-  controlUI.style.border = '2px solid #bcab7a';
-  // controlUI.style.borderRadius = '3px';
-  // controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-  controlUI.style.cursor = 'pointer';
-  controlUI.style.marginBottom = '30px';
-  controlUI.style.textAlign = 'center';
-  controlUI.title = 'Click to recenter the map';
-  controlDiv.appendChild(controlUI);
-
-  // Set CSS for the control interior
-  var controlText = document.createElement('div');
-  controlText.style.color = '#bcab7a';
-  controlText.style.fontFamily = '"ProximaNova", Arial, Helvetica, sans-serif';
-  controlText.style.fontSize = '14px';
-  controlText.style.lineHeight = '36px';
-  controlText.style.paddingLeft = '0px';
-  controlText.style.paddingRight = '0px';
-  controlText.style.textTransform = 'uppercase';
-  controlText.innerHTML = 'Center Location';
-  controlUI.appendChild(controlText);
-
-  // Setup the click event listeners: simply set the map to myMap
-  google.maps.event.addDomListener(controlUI, 'click', function() {
-  	map.setCenter(myMap)
-  });
 }
 
-function initialize() {
-	var mapDiv = document.getElementById('map-canvas');
-	var mapOptions = {
-		zoom: 18,
-		center: myMap,
-		styles: [
-		{
-			"elementType": "labels.text",
-			"stylers": [
-			{
-				"saturation": 10
-			},
-			{
-				"lightness": 35
-			},
-			{
-				"weight": 1
-			}
-			]
-		},
-		{
-			"featureType": "poi.business",
-			"stylers": [
-			{
-				"visibility": "off"
-			}
-			]
-		},
-		{
-			"featureType": "poi.park",
-			"elementType": "labels.text",
-			"stylers": [
-			{
-				"visibility": "off"
-			}
-			]
-		},
-		{
-			"featureType": "road.arterial",
-			"elementType": "labels",
-			"stylers": [
-			{
-				"visibility": "off"
-			}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "labels",
-			"stylers": [
-			{
-				"visibility": "off"
-			}
-			]
-		},
-		{
-			"featureType": "road.local",
-			"stylers": [
-			{
-				"visibility": "off"
-			}
-			]
-		}
-		]
-	}
-	map = new google.maps.Map(mapDiv, mapOptions);
+$( window ).load(function() {
+	home_banner_adjustment();
+	$('.banner-text h1').css("visibility","visible");
+});
 
-  // Create the DIV to hold the control and call the CenterControl() constructor passing in this DIV.
-  var centerControlDiv = document.createElement('div');
-  centerControlDiv.setAttribute('style', 'left:0 !important');
-  centerControlDiv.style.right = '0';
-  centerControlDiv.style.left = '0';
-  centerControlDiv.style.margin = 'auto';
-  centerControlDiv.style.width = '180px';
-  centerControlDiv.className = "btn-center";
+$( window ).resize(function() {
+	home_banner_adjustment();
+});
 
-  var centerControl = new CenterControl(centerControlDiv, map);
-
-  centerControlDiv.index = 1;
-  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv);
-
-  //Add Marker Icon
-  var url = siteURL.templateUrl; //WordPress path url
-  var image = url + '/images/marker.png';
-  var beachMarker = new google.maps.Marker({
-  	position: myMapIcon,
-  	map: map,
-  	icon: image
-  });
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-};
 
 })(jQuery);

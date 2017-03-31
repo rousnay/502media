@@ -11651,7 +11651,7 @@ a:hover, a:active {
   font-weight: 400;
 }
 
-/* Small menu TOGGLE button*/
+/* Menu TOGGLE button*/
 /* line 105, src/sass/navigation/_menus.scss */
 .mm-menu-toggle {
   right: 36px;
@@ -11662,7 +11662,6 @@ a:hover, a:active {
 
 /* line 113, src/sass/navigation/_menus.scss */
 button#mm-menu-toggle {
-  display: none;
   border: none;
   outline: none;
   box-shadow: none;
@@ -11719,199 +11718,6 @@ button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle
   transition-delay: 0.3s, 0s;
 }
 
-/* line 171, src/sass/navigation/_menus.scss */
-nav#mm-menu button {
-  background: #366672;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 13px;
-  padding: 14px 48px;
-  margin: 12px 0 10px 31px;
-}
-
-/* line 181, src/sass/navigation/_menus.scss */
-#mm-menu ul ul, #mm-menu ul ul ul {
-  display: none;
-}
-
-/* line 185, src/sass/navigation/_menus.scss */
-#mm-menu .has-sub > a::after {
-  content: '';
-  display: block;
-  height: 14px;
-  width: 9px;
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-50%);
-  right: 2em;
-  background: url(images/icon-menu-arrow.png) no-repeat center center;
-  background-size: 9px 14px;
-  transition-property: transform;
-  transition-duration: 0.2s;
-}
-
-/* line 202, src/sass/navigation/_menus.scss */
-#mm-menu .has-sub.active > a::after {
-  transform: translateY(-50%) rotate(90deg);
-}
-
-/* line 206, src/sass/navigation/_menus.scss */
-#mm-menu li {
-  display: block;
-  width: 100%;
-  opacity: 1;
-}
-
-/* line 212, src/sass/navigation/_menus.scss */
-#mm-menu li a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-/* line 218, src/sass/navigation/_menus.scss */
-#mm-menu #header-menu-con-id {
-  padding-bottom: 30px;
-}
-
-/* line 222, src/sass/navigation/_menus.scss */
-#mm-menu #header-menu-id > li > a {
-  font-size: 20px !important;
-  font-weight: bold;
-  padding: 10px 15px;
-  margin: 4px 0;
-  color: #4b494b;
-  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background 0.5s, color 0.5s;
-}
-
-/* line 233, src/sass/navigation/_menus.scss */
-#mm-menu #header-menu-id > li > ul li > a {
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-  color: #bcab7a;
-  font-size: 20px !important;
-  padding: 5px 15px;
-}
-
-/* line 239, src/sass/navigation/_menus.scss */
-#mm-menu #header-menu-id > li > ul > li > ul > li > a {
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-  color: #575757;
-  font-size: 18px !important;
-  padding: 5px 15px;
-}
-
-/* line 247, src/sass/navigation/_menus.scss */
-.mm-menu__link--touch-effect {
-  display: none !important;
-}
-
-/* line 252, src/sass/navigation/_menus.scss */
-.mm-menu {
-  right: 0;
-  left: inherit;
-  left: initial;
-  height: inherit;
-  height: initial;
-  transform: translateX(100%);
-}
-
-/* line 262, src/sass/navigation/_menus.scss */
-#mm-menu .mm-menu__header {
-  background-color: #ffffff !important;
-}
-/* line 265, src/sass/navigation/_menus.scss */
-#mm-menu #header-menu-left-id {
-  margin-top: 15px;
-}
-/* line 268, src/sass/navigation/_menus.scss */
-#mm-menu #header-menu-id {
-  padding-left: 15px;
-}
-/* line 271, src/sass/navigation/_menus.scss */
-#mm-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 275, src/sass/navigation/_menus.scss */
-#mm-menu ul ul {
-  padding-left: 15px;
-}
-/* line 279, src/sass/navigation/_menus.scss */
-#mm-menu a {
-  text-decoration: none;
-}
-/* line 281, src/sass/navigation/_menus.scss */
-#mm-menu a:focus {
-  outline: none;
-}
-
-@media (min-width: 300px) {
-  /* line 289, src/sass/navigation/_menus.scss */
-  .mm-menu {
-    width: 300px;
-    transform: translateX(300px);
-  }
-}
-@media (max-width: 799px) {
-  /* line 296, src/sass/navigation/_menus.scss */
-  #mm-menu-toggle {
-    display: block !important;
-  }
-}
-@media (min-width: 767px) {
-  /* line 302, src/sass/navigation/_menus.scss */
-  .mm-menu-toggle {
-    position: fixed;
-    top: 20px;
-    right: 38px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 309, src/sass/navigation/_menus.scss */
-  .mm-menu-toggle {
-    right: 21px;
-    top: 19px;
-  }
-
-  /* line 314, src/sass/navigation/_menus.scss */
-  header .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  /* line 320, src/sass/navigation/_menus.scss */
-  header .social-links .icon .fa {
-    padding: 8px 6px 5px;
-  }
-
-  /* line 325, src/sass/navigation/_menus.scss */
-  .display-table {
-    display: none !important;
-  }
-}
-@media (max-width: 667px) {
-  /* line 331, src/sass/navigation/_menus.scss */
-  .mm-menu__header {
-    height: 140px !important;
-  }
-
-  /* line 334, src/sass/navigation/_menus.scss */
-  .mm-menu__link {
-    padding: 6px;
-  }
-}
-@media (max-width: 650px) {
-  /* line 339, src/sass/navigation/_menus.scss */
-  .main-navigation .site-logo {
-    margin-top: 10px !important;
-    width: 70% !important;
-  }
-}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -12130,12 +11936,6 @@ Ninja Forms
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-/* line 1, src/sass/site/layout/_header.scss */
-header#masthead {
-  width: 100%;
-  background: #fff;
-}
-
 /* line 5, src/sass/site/layout/_header.scss */
 .sideheader-visible .tool-bar a {
   color: #575757;
@@ -12361,32 +12161,164 @@ footer#colophon .location-map .content-holder-half .btn-center {
 /*--------------------------------------------------------------
 ## Global
 --------------------------------------------------------------*/
-/* line 1, src/sass/site/page-template/_global.scss */
-.page-header {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-/* line 7, src/sass/site/page-template/_global.scss */
+/* line 2, src/sass/site/page-template/_global.scss */
 ::selection {
   color: #ffffff !important;
   background: #bcab7a !important;
 }
 
-/* line 11, src/sass/site/page-template/_global.scss */
+/* line 8, src/sass/site/page-template/_global.scss */
+body:not(.page-template-page-home) #page {
+  width: 100% !important;
+  min-height: 100vh;
+  background-color: #fff;
+}
+/* line 14, src/sass/site/page-template/_global.scss */
+body:not(.page-template-page-home) section header, body:not(.page-template-page-home) section footer {
+  display: none;
+}
+/* line 21, src/sass/site/page-template/_global.scss */
+body.page-template-page-philosophy header#masthead, body.page-template-default header#masthead {
+  padding-bottom: 35px;
+}
+/* line 26, src/sass/site/page-template/_global.scss */
+body.page-template-page-vc header#masthead, body.page-template-page-hard-coded header#masthead {
+  margin-bottom: 5px;
+}
+/* line 29, src/sass/site/page-template/_global.scss */
+body.page-template-page-vc .site-content, body.page-template-page-hard-coded .site-content {
+  margin: 0 -35px !important;
+}
+
+/* line 34, src/sass/site/page-template/_global.scss */
+.container {
+  width: 100% !important;
+}
+
+/* line 39, src/sass/site/page-template/_global.scss */
+.full-width {
+  width: 100% !important;
+}
+
+/* line 42, src/sass/site/page-template/_global.scss */
+.content-holder {
+  width: 100% !important;
+  max-width: 1070px !important;
+  margin: 0 auto;
+}
+
+/* line 47, src/sass/site/page-template/_global.scss */
+.content-holder-half {
+  width: 100% !important;
+  max-width: 520px !important;
+  margin: 0 auto;
+}
+/* line 51, src/sass/site/page-template/_global.scss */
+.content-holder-half > div {
+  padding: 0 !important;
+}
+
+/* line 55, src/sass/site/page-template/_global.scss */
+.left-sidebar {
+  margin-top: 22px;
+  padding-left: 0 !important;
+}
+
+/* line 60, src/sass/site/page-template/_global.scss */
+#sideheader {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  width: 300px;
+  padding: 50px 35px;
+  z-index: 0;
+  background: #424d4d;
+  color: white;
+  overflow: auto;
+  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+}
+/* line 75, src/sass/site/page-template/_global.scss */
+#sideheader.is-visible {
+  transform: translateX(0);
+}
+/* line 79, src/sass/site/page-template/_global.scss */
+#sideheader .buttons.gray:hover {
+  background: #f00 !important;
+}
+/* line 81, src/sass/site/page-template/_global.scss */
+#sideheader .buttons.gray:hover a, #sideheader .buttons.gray:hover i {
+  color: #fff;
+}
+
+/* line 87, src/sass/site/page-template/_global.scss */
+.push_sidebar {
+  padding-top: 15px;
+}
+
+/* line 92, src/sass/site/page-template/_global.scss */
+.page-header {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+  padding-bottom: 32px;
+}
+/* line 99, src/sass/site/page-template/_global.scss */
+.page-header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
+  margin-top: 37px;
+  letter-spacing: 1.5px;
+}
+/* line 106, src/sass/site/page-template/_global.scss */
+.page-header h4 {
+  font-size: 18px;
+  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  line-height: 21px;
+  max-width: 620px;
+  margin: 14px auto;
+  padding: 0 15px;
+}
+
+/* line 115, src/sass/site/page-template/_global.scss */
+.page-contents {
+  position: relative;
+}
+
+/* line 119, src/sass/site/page-template/_global.scss */
+.content-wrapper {
+  position: relative;
+  transform: translateX(0);
+  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
+}
+
+/* line 126, src/sass/site/page-template/_global.scss */
+.sideheader-visible .content-wrapper {
+  transform: translateX(-300px);
+}
+/* line 128, src/sass/site/page-template/_global.scss */
+.sideheader-visible .content-wrapper:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 135, src/sass/site/page-template/_global.scss */
 section.page-banner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   box-shadow: inset 0px 30px 36px -34px rgba(0, 0, 0, 0.4);
 }
-/* line 17, src/sass/site/page-template/_global.scss */
+/* line 141, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-holder {
   position: relative;
   height: 265px;
 }
-/* line 22, src/sass/site/page-template/_global.scss */
+/* line 146, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-card {
   position: absolute;
   max-width: 516px;
@@ -12399,14 +12331,14 @@ section.page-banner .banner-card {
   bottom: 30px;
   left: -8%;
 }
-/* line 33, src/sass/site/page-template/_global.scss */
+/* line 157, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-card p {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
   margin-bottom: 23px;
 }
-/* line 39, src/sass/site/page-template/_global.scss */
+/* line 163, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-card h3 {
   font-weight: bold;
   font-size: 21px;
@@ -12415,91 +12347,7 @@ section.page-banner .banner-card h3 {
   /* margin-top: 1px; */
 }
 
-/* line 49, src/sass/site/page-template/_global.scss */
-.page-header {
-  text-align: center;
-  padding-bottom: 32px;
-}
-/* line 52, src/sass/site/page-template/_global.scss */
-.page-header h1 {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
-  margin-top: 37px;
-  letter-spacing: 1.5px;
-}
-/* line 59, src/sass/site/page-template/_global.scss */
-.page-header h4 {
-  font-size: 18px;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-  line-height: 21px;
-  max-width: 620px;
-  margin: 14px auto;
-  padding: 0 15px;
-}
-
-/* line 68, src/sass/site/page-template/_global.scss */
-.page-contents {
-  position: relative;
-}
-
-/* line 75, src/sass/site/page-template/_global.scss */
-body:not(.page-template-page-home) section header, body:not(.page-template-page-home) section footer {
-  display: none;
-}
-/* line 81, src/sass/site/page-template/_global.scss */
-body.page-template-page-philosophy header#masthead, body.page-template-default header#masthead {
-  padding-bottom: 35px;
-}
-/* line 86, src/sass/site/page-template/_global.scss */
-body.page-template-page-vc header#masthead, body.page-template-page-hard-coded header#masthead {
-  margin-bottom: 5px;
-}
-/* line 89, src/sass/site/page-template/_global.scss */
-body.page-template-page-vc .site-content, body.page-template-page-hard-coded .site-content {
-  margin: 0 -35px !important;
-}
-
-/* line 94, src/sass/site/page-template/_global.scss */
-.container {
-  width: 100% !important;
-}
-
-/* line 97, src/sass/site/page-template/_global.scss */
-#page {
-  width: 100% !important;
-}
-
-/* line 100, src/sass/site/page-template/_global.scss */
-.full-width {
-  width: 100% !important;
-}
-
-/* line 103, src/sass/site/page-template/_global.scss */
-.content-holder {
-  width: 100% !important;
-  max-width: 1070px !important;
-  margin: 0 auto;
-}
-
-/* line 108, src/sass/site/page-template/_global.scss */
-.content-holder-half {
-  width: 100% !important;
-  max-width: 520px !important;
-  margin: 0 auto;
-}
-/* line 112, src/sass/site/page-template/_global.scss */
-.content-holder-half > div {
-  padding: 0 !important;
-}
-
-/* line 116, src/sass/site/page-template/_global.scss */
-.left-sidebar {
-  margin-top: 22px;
-  padding-left: 0 !important;
-}
-
-/* line 122, src/sass/site/page-template/_global.scss */
+/* line 175, src/sass/site/page-template/_global.scss */
 .ms-container h1 {
   font-family: "CeraBasic", Arial, Helvetica, sans-serif;
   color: #f1f2f2;
@@ -12507,7 +12355,7 @@ body.page-template-page-vc .site-content, body.page-template-page-hard-coded .si
   letter-spacing: 1px;
   font-size: 1.8em;
 }
-/* line 129, src/sass/site/page-template/_global.scss */
+/* line 182, src/sass/site/page-template/_global.scss */
 .ms-container h3 {
   font-family: "ProximaNova", Arial, Helvetica, sans-serif;
   color: #f1f2f2;
@@ -12517,7 +12365,7 @@ body.page-template-page-vc .site-content, body.page-template-page-hard-coded .si
   line-height: 1.2em;
   margin-top: 10px;
 }
-/* line 140, src/sass/site/page-template/_global.scss */
+/* line 193, src/sass/site/page-template/_global.scss */
 .ms-container .ms-bullets .ms-bullets-count .ms-bullet {
   width: 14px;
   height: 14px;
@@ -12525,36 +12373,36 @@ body.page-template-page-vc .site-content, body.page-template-page-hard-coded .si
   background-color: #ffffff;
   border-radius: 50%;
 }
-/* line 147, src/sass/site/page-template/_global.scss */
+/* line 200, src/sass/site/page-template/_global.scss */
 .ms-container .ms-bullets .ms-bullets-count .ms-bullet-selected {
   background-color: #bcab7a !important;
 }
 
-/* line 156, src/sass/site/page-template/_global.scss */
+/* line 209, src/sass/site/page-template/_global.scss */
 #company-logo-slider {
   padding: 5px 45px;
   background: transparent;
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 161, src/sass/site/page-template/_global.scss */
+/* line 214, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-item {
   opacity: .35;
   transition: all 200ms ease-out;
 }
-/* line 164, src/sass/site/page-template/_global.scss */
+/* line 217, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-item:hover {
   opacity: 1;
 }
-/* line 167, src/sass/site/page-template/_global.scss */
+/* line 220, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-item .thumbnail {
   background-color: transparent;
 }
-/* line 171, src/sass/site/page-template/_global.scss */
+/* line 224, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-pagination {
   display: none;
 }
-/* line 175, src/sass/site/page-template/_global.scss */
+/* line 228, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons div {
   position: absolute;
   display: block;
@@ -12566,49 +12414,22 @@ body.page-template-page-vc .site-content, body.page-template-page-hard-coded .si
   background-repeat: no-repeat;
   opacity: 1;
 }
-/* line 185, src/sass/site/page-template/_global.scss */
+/* line 238, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons div i {
   display: none;
 }
-/* line 189, src/sass/site/page-template/_global.scss */
+/* line 242, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons .owl-prev {
   left: 0px !important;
   background-position-x: -26px;
 }
-/* line 193, src/sass/site/page-template/_global.scss */
+/* line 246, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons .owl-next {
   right: 0px !important;
   background-position-x: 3px;
 }
 
-/* line 201, src/sass/site/page-template/_global.scss */
-.content-wrapper {
-  position: relative;
-  transform: translateX(0);
-  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-}
-
-/* line 206, src/sass/site/page-template/_global.scss */
-#mm-menu-toggle {
-  transform: translateX(0);
-  transition: all 0.8s cubic-bezier(0.68, 0, 0.29, 1);
-}
-
-/* line 211, src/sass/site/page-template/_global.scss */
-.sideheader-visible .content-wrapper {
-  transform: translateX(-300px);
-}
-/* line 213, src/sass/site/page-template/_global.scss */
-.sideheader-visible .content-wrapper:after {
-  opacity: 1;
-  visibility: visible;
-}
-/* line 218, src/sass/site/page-template/_global.scss */
-.sideheader-visible #mm-menu-toggle {
-  transform: translateX(-300px);
-}
-
-/* line 224, src/sass/site/page-template/_global.scss */
+/* line 254, src/sass/site/page-template/_global.scss */
 .link-full {
   display: block;
   position: absolute;
@@ -12621,12 +12442,12 @@ body.page-template-page-vc .site-content, body.page-template-page-hard-coded .si
   filter: alpha(opacity=0);
 }
 
-/* line 236, src/sass/site/page-template/_global.scss */
+/* line 266, src/sass/site/page-template/_global.scss */
 iframe {
   border: none !important;
 }
 
-/* line 240, src/sass/site/page-template/_global.scss */
+/* line 270, src/sass/site/page-template/_global.scss */
 .wpb_wrapper iframe {
   text-align: center;
   position: absolute;
@@ -12639,96 +12460,96 @@ iframe {
 }
 
 @media (min-width: 1118px) and (max-width: 1260px) {
-  /* line 253, src/sass/site/page-template/_global.scss */
+  /* line 283, src/sass/site/page-template/_global.scss */
   .banner-card {
     left: calc( 543px - ( 100vw / 2 )) !important;
   }
 }
 @media (max-width: 1117px) {
-  /* line 259, src/sass/site/page-template/_global.scss */
+  /* line 289, src/sass/site/page-template/_global.scss */
   .banner-card {
     left: -15px !important;
   }
 }
 @media (max-width: 1100px) {
-  /* line 265, src/sass/site/page-template/_global.scss */
+  /* line 295, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card {
     max-width: 450px;
     padding: 27px 30px 15px 99px;
   }
 
-  /* line 269, src/sass/site/page-template/_global.scss */
+  /* line 299, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card h3 {
     font-size: 18px;
   }
 
-  /* line 272, src/sass/site/page-template/_global.scss */
+  /* line 302, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card p {
     font-size: 16px;
     margin-bottom: 18px;
   }
 
-  /* line 276, src/sass/site/page-template/_global.scss */
+  /* line 306, src/sass/site/page-template/_global.scss */
   .page-header h1 {
     font-size: 26px;
   }
 
-  /* line 279, src/sass/site/page-template/_global.scss */
+  /* line 309, src/sass/site/page-template/_global.scss */
   .page-header h4 {
     font-size: 16px;
   }
 }
 @media (max-width: 800px) {
-  /* line 284, src/sass/site/page-template/_global.scss */
+  /* line 314, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card {
     max-width: 400px;
     padding: 27px 30px 15px 75px;
   }
 
-  /* line 288, src/sass/site/page-template/_global.scss */
+  /* line 318, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card h3 {
     font-size: 16px;
     margin-top: 10px;
   }
 
-  /* line 292, src/sass/site/page-template/_global.scss */
+  /* line 322, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card p {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 0;
   }
 
-  /* line 297, src/sass/site/page-template/_global.scss */
+  /* line 327, src/sass/site/page-template/_global.scss */
   .page-header h1 {
     font-size: 24px;
   }
 }
 @media (max-width: 767px) {
-  /* line 303, src/sass/site/page-template/_global.scss */
+  /* line 333, src/sass/site/page-template/_global.scss */
   .page-header h4 {
     font-size: 14px;
   }
 }
 @media (max-width: 550px) {
-  /* line 309, src/sass/site/page-template/_global.scss */
+  /* line 339, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-holder {
     height: 220px;
   }
 
-  /* line 312, src/sass/site/page-template/_global.scss */
+  /* line 342, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card {
     max-width: 400px;
     padding: 15px 15px 15px 40px;
     bottom: 20px;
   }
 
-  /* line 317, src/sass/site/page-template/_global.scss */
+  /* line 347, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card p {
     font-size: 13px;
     line-height: 18px;
   }
 
-  /* line 321, src/sass/site/page-template/_global.scss */
+  /* line 351, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card h3 {
     font-size: 14px;
   }
@@ -13985,31 +13806,55 @@ body .gform_wrapper ul li.gfield {
 /********
   Home
   *********/
-/* line 5, src/sass/site/page-template/_pages.scss */
-.site-header .logo-area {
+/* line 7, src/sass/site/page-template/_pages.scss */
+body.page-template-page-home .site-header .logo-area {
   padding: 26px 0 26px 3px;
+}
+/* line 12, src/sass/site/page-template/_pages.scss */
+body.page-template-page-home.gradient-bg {
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 24, src/sass/site/page-template/_pages.scss */
+body.page-template-page-home .site-content {
+  background-color: transparent !important;
+}
+/* line 27, src/sass/site/page-template/_pages.scss */
+body.page-template-page-home .banner-text {
+  max-width: 750px;
+  margin: auto auto;
+}
+/* line 30, src/sass/site/page-template/_pages.scss */
+body.page-template-page-home .banner-text h1 {
+  font-size: 54px;
+  color: #ffffff;
+  visibility: hidden;
+  text-align: center;
 }
 
 /***********
   Affiliations
   ************/
-/* line 13, src/sass/site/page-template/_pages.scss */
+/* line 46, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .site-content {
   background-color: #f4f4f4;
 }
-/* line 16, src/sass/site/page-template/_pages.scss */
+/* line 49, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents {
   margin-top: 32px;
 }
-/* line 19, src/sass/site/page-template/_pages.scss */
+/* line 52, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .isotope-item {
   margin-bottom: 30px;
 }
-/* line 22, src/sass/site/page-template/_pages.scss */
+/* line 55, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started {
   text-align: center;
 }
-/* line 24, src/sass/site/page-template/_pages.scss */
+/* line 57, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started h2 {
   font-size: 24px;
   font-weight: bold;
@@ -14017,7 +13862,7 @@ body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope
   margin-bottom: 30px;
   margin-top: 30px;
 }
-/* line 31, src/sass/site/page-template/_pages.scss */
+/* line 64, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started button {
   background-color: transparent;
   border: 2px solid #938055;
@@ -14027,7 +13872,7 @@ body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope
   letter-spacing: 1.5px;
   padding: 15px 30px;
 }
-/* line 39, src/sass/site/page-template/_pages.scss */
+/* line 72, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started button:focus, body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started button:hover {
   background-color: #938055;
   color: #ffffff;
