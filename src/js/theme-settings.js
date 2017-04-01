@@ -138,7 +138,7 @@ sideHeaderInit();
 /******************
 Backgroud Gradient
 ******************/
-$('body.page-template-page-home').addClass('gradient-bg')
+$('body.page-template-page-home #page').addClass('gradient-bg')
 
 var colors = new Array(
 	[62,35,255],

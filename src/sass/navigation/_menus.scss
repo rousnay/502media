@@ -10,7 +10,7 @@
     margin-top: 0;
 
     ul,li { // for all UL & LI
-      list-style: none;
+		  list-style: none;
       margin: 0;
       padding-left: 0;
       text-align: center;
@@ -22,14 +22,13 @@
     }
     #header-menu-id {
       & > li { // main menu LI
-        display: inline-block;
+            border-bottom: 1px solid #fff;
 
       & > a { // for all links text
         font-size: 16px;
         text-transform: uppercase;
-        font-weight: bold;
-        padding: 10px 26px;
-        margin-bottom: 10px;
+        text-align: left;
+        color: #fff;
         &:hover > a,
         &.focus > a {
           color: $color_theme_502media_yellow;

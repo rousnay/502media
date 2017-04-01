@@ -44,9 +44,14 @@
 		var adminBarHeight	= jQuery('#wpadminbar').height();
 		var menuToggleTop 	= 22;
 		var topTotal 		= adminBarHeight + menuToggleTop;
-		//jQuery('#masthead').css('top',adminBarHeight);
+		var containerHeight	= jQuery( window ).height();
+		var pageHeight		= containerHeight - adminBarHeight;
+		pageHeight = parseInt(pageHeight, 10);
+
 		jQuery('#mm-menu-toggle').css('top',topTotal);
-		jQuery('#mm-menu').css('top',adminBarHeight);
+ 		jQuery('#page').css('minHeight', pageHeight);
+
+ 		console.log(pageHeight);
 	}
 	fixed_header_with_adminBar();
 	jQuery( window ).resize(function() {

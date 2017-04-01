@@ -7,6 +7,10 @@
 function theme_502media_menus() {
     register_nav_menus(
         array(
+            // wp_nav_menu()
+            //'primary' => esc_html__( 'Primary', 'theme_502media' ),
+
+            // theme_502media_header_menu()
             'header-menu' => __( 'Header menu' , 'nav menu location', 'theme_502media')
             )
         );
