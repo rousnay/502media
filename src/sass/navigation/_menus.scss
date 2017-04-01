@@ -10,7 +10,7 @@
     margin-top: 0;
 
     ul,li { // for all UL & LI
-		  list-style: none;
+      list-style: none;
       margin: 0;
       padding-left: 0;
       text-align: center;
@@ -22,7 +22,7 @@
     }
     #header-menu-id {
       & > li { // main menu LI
-            border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #fff;
 
       & > a { // for all links text
         font-size: 16px;
@@ -102,7 +102,9 @@
 
 /* Menu TOGGLE button*/
 .mm-menu-toggle {
-  right: 36px;
+  right: 53px;
+  top: 35px;
+  width: 35px;
   left: inherit;
   left: initial;
   position:absolute!important;

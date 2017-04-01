@@ -244,7 +244,7 @@ function home_banner_adjustment() {
 
 	bannerHalfHeight = bannerHeight/2;
 	bannerPosition = (containerHeight/2) - bannerHalfHeight;
-	bannerTop = bannerPosition - headerHeight
+	bannerTop = bannerPosition; //bannerPosition - headerHeight;
 	bannerTopMargin = parseInt(bannerTop, 10);
 
 	$('.banner-text').css("marginTop",bannerTopMargin);

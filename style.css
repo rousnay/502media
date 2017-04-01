@@ -11653,35 +11653,37 @@ a:hover, a:active {
 /* Menu TOGGLE button*/
 /* line 104, src/sass/navigation/_menus.scss */
 .mm-menu-toggle {
-  right: 36px;
+  right: 53px;
+  top: 35px;
+  width: 35px;
   left: inherit;
   left: initial;
   position: absolute !important;
 }
 
-/* line 112, src/sass/navigation/_menus.scss */
+/* line 114, src/sass/navigation/_menus.scss */
 button#mm-menu-toggle {
   border: none;
   outline: none;
   box-shadow: none;
   background-color: transparent !important;
 }
-/* line 118, src/sass/navigation/_menus.scss */
+/* line 120, src/sass/navigation/_menus.scss */
 button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle:focus {
   background-color: transparent !important;
 }
 
-/* line 124, src/sass/navigation/_menus.scss */
+/* line 126, src/sass/navigation/_menus.scss */
 .mm-menu-toggle {
   background: linear-gradient(0deg, rgba(188, 171, 122, 0), rgba(188, 171, 122, 0) 7px, #bcab7a 7px, #bcab7a 11px, rgba(188, 171, 122, 0) 11px, rgba(188, 171, 122, 0) 18px);
 }
 
-/* line 130, src/sass/navigation/_menus.scss */
+/* line 132, src/sass/navigation/_menus.scss */
 .mm-menu-toggle.active {
   background: transparent;
 }
 
-/* line 134, src/sass/navigation/_menus.scss */
+/* line 136, src/sass/navigation/_menus.scss */
 .mm-menu-toggle.active::before {
   width: 100%;
   height: 3px;
@@ -11690,17 +11692,17 @@ button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle
   transition-delay: 0s, 0.3s;
 }
 
-/* line 142, src/sass/navigation/_menus.scss */
+/* line 144, src/sass/navigation/_menus.scss */
 .mm-menu-toggle::before {
   transition-property: top, transform;
 }
 
-/* line 147, src/sass/navigation/_menus.scss */
+/* line 149, src/sass/navigation/_menus.scss */
 .mm-menu-toggle::after {
   transition-property: bottom, transform;
 }
 
-/* line 152, src/sass/navigation/_menus.scss */
+/* line 154, src/sass/navigation/_menus.scss */
 .mm-menu-toggle.active::after {
   width: 100%;
   height: 3px;
@@ -11709,7 +11711,7 @@ button#mm-menu-toggle:hover, button#mm-menu-toggle:active, button#mm-menu-toggle
   transition-delay: 0s, 0.3s;
 }
 
-/* line 160, src/sass/navigation/_menus.scss */
+/* line 162, src/sass/navigation/_menus.scss */
 .mm-menu-toggle::after, .mm-menu-toggle::before {
   background-color: #bcab7a;
   transform-origin: initial;
@@ -11935,6 +11937,12 @@ Ninja Forms
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+/* line 1, src/sass/site/layout/_header.scss */
+header#masthead {
+  position: absolute;
+  width: 100% !important;
+}
+
 /* line 5, src/sass/site/layout/_header.scss */
 .sideheader-visible .tool-bar a {
   color: #575757;
@@ -11948,19 +11956,29 @@ Ninja Forms
 header .container {
   width: auto;
 }
-/* line 17, src/sass/site/layout/_header.scss */
+/* line 16, src/sass/site/layout/_header.scss */
+header .container .logo-area {
+  z-index: 10;
+}
+/* line 18, src/sass/site/layout/_header.scss */
+header .container .logo-area img {
+  max-width: 250px;
+  margin-top: 25px;
+  margin-left: 35px;
+}
+/* line 25, src/sass/site/layout/_header.scss */
 header .site-header {
   border-bottom: 1px solid #000;
   padding-top: 20px;
   padding-bottom: 5px;
 }
-/* line 21, src/sass/site/layout/_header.scss */
+/* line 29, src/sass/site/layout/_header.scss */
 header .site-header div {
   padding: 0;
 }
 
 @media (max-width: 991px) {
-  /* line 27, src/sass/site/layout/_header.scss */
+  /* line 35, src/sass/site/layout/_header.scss */
   header .site-header {
     padding-top: 5px;
     padding-bottom: 5px;

@@ -1,6 +1,6 @@
 header#masthead{
-    // width: 100%;
-    // background: #fff;
+    position: absolute;
+    width: 100%!important;
 }
 .sideheader-visible .tool-bar a{
     color: $color_theme_502media_grey;
@@ -13,15 +13,23 @@ header#masthead{
 header{
     .container {
         width: auto;
-        }
-        .site-header {
-            border-bottom: 1px solid #000;
-            padding-top: 20px;
-            padding-bottom: 5px;
-            div {
-                padding: 0;
+        .logo-area {
+            z-index: 10;
+            img{
+                max-width: 250px;
+                margin-top: 25px;
+                margin-left: 35px;
             }
         }
+    }
+    .site-header {
+        border-bottom: 1px solid #000;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        div {
+            padding: 0;
+        }
+    }
 }
 @media (max-width: 991px){
     header .site-header {

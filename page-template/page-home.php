@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Home
+* Template Name: Front Page
 *
 * @package 502MEDIA
 */

@@ -48,7 +48,7 @@
 		var pageHeight		= containerHeight - adminBarHeight;
 		pageHeight = parseInt(pageHeight, 10);
 
-		jQuery('#mm-menu-toggle').css('top',topTotal);
+		// jQuery('#mm-menu-toggle').css('top',topTotal);
  		jQuery('#page').css('minHeight', pageHeight);
 
  		console.log(pageHeight);

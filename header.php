@@ -35,7 +35,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'theme_502media' ); ?></a>
 		<header id="masthead" class="site-header panel-top panel-fixed" role="banner">
 			<div class="container">
-				<div class="row content-holder">
+				<div class="row">
 					<div class="col-sm-6 logo-area">
 						<a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
