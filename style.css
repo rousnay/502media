@@ -11998,96 +11998,29 @@ footer#colophon .container {
   width: 100% !important;
 }
 /* line 8, src/sass/site/layout/_footer.scss */
-footer#colophon .informations {
-  background-color: #403f40;
-}
-/* line 10, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half {
-  float: right;
-  padding: 46px 0 68px;
-}
-/* line 13, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div {
-  float: left;
-  padding: 0 8px;
-  color: #fff;
-}
-/* line 17, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div h4 {
-  font-size: 18px;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  margin-bottom: 15px;
-}
-/* line 25, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div p {
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 23px;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-  letter-spacing: 1.5px;
-  margin-bottom: 8px;
-}
-/* line 33, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div ul {
-  padding: 0;
-  margin-left: 32px;
-  list-style: none;
-}
-/* line 37, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div ul li {
-  margin-top: 4.5px;
-  letter-spacing: 1.5px;
-}
-/* line 42, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div button {
-  background-color: transparent;
-  border: 2px solid #bcab7a;
-  padding: 14px 28px;
-}
-/* line 46, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div button a {
-  text-transform: uppercase;
-  color: #bcab7a;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
-}
-/* line 54, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div button:hover, footer#colophon .informations .content-holder-half > div > div button:focus {
-  background-color: #bcab7a;
-}
-/* line 56, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .content-holder-half > div > div button:hover a, footer#colophon .informations .content-holder-half > div > div button:focus a {
-  color: #464446;
-}
-/* line 68, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .quick-links a {
-  color: #ffffff;
-}
-/* line 70, src/sass/site/layout/_footer.scss */
-footer#colophon .informations .quick-links a:hover {
-  color: #bcab7a;
-}
-/* line 76, src/sass/site/layout/_footer.scss */
-footer#colophon .location-map {
-  padding: 0 !important;
-  box-shadow: inset 0px 30px 36px -34px rgba(0, 0, 0, 0.25);
-}
-/* line 79, src/sass/site/layout/_footer.scss */
-footer#colophon .location-map .content-holder-half {
-  max-width: 100% !important;
-}
-/* line 81, src/sass/site/layout/_footer.scss */
-footer#colophon .location-map .content-holder-half div#map-canvas {
+footer#colophon .footer-banner {
+  background-image: url("images/footer-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 350px;
-  width: 100%;
+  line-height: 350px;
+  text-align: center;
 }
-/* line 85, src/sass/site/layout/_footer.scss */
-footer#colophon .location-map .content-holder-half .btn-center {
-  left: 0 !important;
+/* line 15, src/sass/site/layout/_footer.scss */
+footer#colophon .footer-banner .footer-banner-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+/* line 19, src/sass/site/layout/_footer.scss */
+footer#colophon .footer-banner .footer-banner-text h1 {
+  font-size: 72px;
+  color: #fff;
+}
+/* line 23, src/sass/site/layout/_footer.scss */
+footer#colophon .footer-banner .footer-banner-text h3 {
+  font-size: 30px;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -13854,27 +13787,31 @@ body.page-template-page-home .banner-text h1 {
   visibility: hidden;
   text-align: center;
 }
+/* line 39, src/sass/site/page-template/_pages.scss */
+body.page-template-page-home #colophon {
+  display: none !important;
+}
 
 /***********
   Affiliations
   ************/
-/* line 46, src/sass/site/page-template/_pages.scss */
+/* line 50, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .site-content {
   background-color: #f4f4f4;
 }
-/* line 49, src/sass/site/page-template/_pages.scss */
+/* line 53, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents {
   margin-top: 32px;
 }
-/* line 52, src/sass/site/page-template/_pages.scss */
+/* line 56, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .isotope-item {
   margin-bottom: 30px;
 }
-/* line 55, src/sass/site/page-template/_pages.scss */
+/* line 59, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started {
   text-align: center;
 }
-/* line 57, src/sass/site/page-template/_pages.scss */
+/* line 61, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started h2 {
   font-size: 24px;
   font-weight: bold;
@@ -13882,7 +13819,7 @@ body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope
   margin-bottom: 30px;
   margin-top: 30px;
 }
-/* line 64, src/sass/site/page-template/_pages.scss */
+/* line 68, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started button {
   background-color: transparent;
   border: 2px solid #938055;
@@ -13892,7 +13829,7 @@ body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope
   letter-spacing: 1.5px;
   padding: 15px 30px;
 }
-/* line 72, src/sass/site/page-template/_pages.scss */
+/* line 76, src/sass/site/page-template/_pages.scss */
 body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started button:focus, body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope .affiliation-started button:hover {
   background-color: #938055;
   color: #ffffff;

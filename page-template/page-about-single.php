@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: Single Team Member
- *
- * @package 502MEDIA
- */
+* Template Name: Single Team Member
+*
+* @package 502MEDIA
+*/
 get_header(); ?>
 
 <div id="content" class="site-content full-width">

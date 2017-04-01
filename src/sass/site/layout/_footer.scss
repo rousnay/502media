@@ -5,85 +5,24 @@ footer#colophon {
     .container {
         width: 100%!important;
     }
-    .informations{
-        background-color: #403f40;
-        .content-holder-half {
-            float: right;
-            padding: 46px 0 68px;
-            & > div > div {
-                float: left;
-                padding:0 8px;
-                color:#fff;
-                h4{
-                    font-size: 18px;
-                    font-family: $font2;
-                    color: #fff;
-                    font-weight: 400;
-                    letter-spacing: 0.8px;
-                    margin-bottom: 15px
-                }
-                p{
-                    font-size: 14px;
-                    color: #ffffff;
-                    line-height: 23px;
-                    font-family: $font2;
-                    letter-spacing: 1.5px;
-                    margin-bottom: 8px;;
-                }
-                ul{
-                    padding: 0;
-                    margin-left: 32px;
-                    list-style: none;
-                    li{
-                        margin-top: 4.5px;
-                        letter-spacing: 1.5px;
-                    }
-                }
-                button{
-                    background-color:transparent;
-                    border:2px solid $color_theme_502media_yellow;
-                    padding:14px 28px;
-                    a {
-                    text-transform:uppercase;
-                    color:$color_theme_502media_yellow;
-                    font-size:14px;
-                    font-weight:600;
-                    font-family: $font2;
-
-                    }
-                    &:hover, &:focus {
-                        background-color: $color_theme_502media_yellow;
-                        a{
-                          color:#464446  
-                        }
-                    }
-                }
+    .footer-banner{
+        background-image: url('images/footer-banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        line-height: 350px;
+        text-align: center;
+        .footer-banner-text {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            h1{
+                font-size: 72px;
+                color: #fff;
             }
-        }
-        .contact-info{
-
-
-        }
-        .quick-links{
-            a{
-                color: #ffffff;
-                &:hover{
-                    color: $color_theme_502media_yellow;
-                }
-            }
-        }
-    }
-    .location-map{
-        padding:0!important;
-        box-shadow: inset 0px 30px 36px -34px rgba(0,0,0,0.25);
-        .content-holder-half{
-            max-width: 100% !important;
-            div#map-canvas{
-                height: 350px;
-                width: 100%;
-            }
-            .btn-center {
-                left: 0!important;
+            h3{
+                font-size: 30px;
+                color: #fff;
             }
         }
     }

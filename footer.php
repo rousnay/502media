@@ -13,8 +13,17 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<section class="container">
 		<div class="row">
+			<div class="col-sm-12 footer-banner">
+				<div class="footer-banner-text">
+					<h1>Ready to See More</h1>
+					<h3>Learn our Process</h3>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-sm-6 social-media-links">
-				<div class="row content-holder-half">
+				<div class="row">
 					<div class="col-sm-12">
 						<div class="contact-info">
 							<?php dynamic_sidebar( 'footer_widgets_1' ); ?>
@@ -26,7 +35,7 @@
 				</div>
 			</div>
 			<div class="col-sm-6 get-in-touch">
-				<div class="row content-holder-half">
+				<div class="row">
 					<div class="col-sm-12">
 						<?php dynamic_sidebar( 'footer_widgets_3' ); ?>
 					</div>
@@ -49,9 +58,9 @@
 		pageHeight = parseInt(pageHeight, 10);
 
 		// jQuery('#mm-menu-toggle').css('top',topTotal);
- 		jQuery('#page').css('minHeight', pageHeight);
+		jQuery('#page').css('minHeight', pageHeight);
 
- 		console.log(pageHeight);
+		console.log(pageHeight);
 	}
 	fixed_header_with_adminBar();
 	jQuery( window ).resize(function() {
