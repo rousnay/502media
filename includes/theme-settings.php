@@ -1,8 +1,31 @@
 <?php 
 
-/**
+/*****************************
+ * Remove Menus from Dashboard
+ *****************************/
+
+function remove_menus(){
+  
+  //remove_menu_page( 'index.php' );                  //Dashboard
+  //remove_menu_page( 'jetpack' );                    //Jetpack* 
+  //remove_menu_page( 'edit.php' );                   //Posts
+  //remove_menu_page( 'upload.php' );                 //Media
+  //remove_menu_page( 'edit.php?post_type=page' );    //Pages
+  remove_menu_page( 'edit-comments.php' );          //Comments
+  //remove_menu_page( 'themes.php' );                 //Appearance
+  //remove_menu_page( 'plugins.php' );                //Plugins
+  //remove_menu_page( 'users.php' );                  //Users
+  //remove_menu_page( 'tools.php' );                  //Tools
+  //remove_menu_page( 'options-general.php' );        //Settings
+  
+}
+add_action( 'admin_menu', 'remove_menus' );
+
+
+
+/*****************************
  * Read More button in excerpt
- */
+ *****************************/
 function new_excerpt_more( $more ) {
 	return '... <a class="readmore" href="' . get_permalink() . ' ">Read more <i class="fa fa-external-link"></i></a>';
 }
@@ -18,9 +41,9 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 // add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
-/**
+/***********************
  * Numbered Pagination
- */
+ ***********************/
 function pagination($pages = '', $range = 4)
 {  
 	$showitems = ($range * 2)+1;  
@@ -59,9 +82,12 @@ function pagination($pages = '', $range = 4)
 }
 
 
-/**
- * stop wp removing div tags
- */
+
+
+/************************************************
+ * stop wp removing html tags from TinyMCS Editor
+ ************************************************/
+
 function tinymce_settings( $settings ) {
 
     // html elements being stripped
