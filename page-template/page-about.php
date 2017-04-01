@@ -33,36 +33,84 @@ get_header(); ?>
 		</div>
 	</section><!-- .page-header -->
 
-	<section class="container affiliation-contents">
+	<section class="container blog-contents">
 		<div class="row content-holder">
-			<div class="col-xs-12">
-				<div id="logo-listing-isotope" class="row">
-					<?php if( have_rows('company_logo', 'option') ): ?> <!-- START company_logo query -->
-						<?php while( have_rows('company_logo', 'option') ): the_row(); 
-						$logo_url = get_sub_field('logo');
-						$company_link = get_sub_field('link');
-						?>
-						<div class="all isotope-item col-xs-6 col-sm-4">
-							<div class="thumbnail thumbnail-hover">
-								<div class="logo-img">
-									<img class="img-responsive" src="<?php echo $logo_url; ?>" >
-								</div>
-								<a href="<?php echo $company_link ?>" class="overlay"></a>
-							</div>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?> <!-- END company_logo query -->
+			<div class="col-sm-12">
+				<div class="row" id="team-listing-isotope">
+					<?php 
+					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+					$args = array(
+						'post_type' => 'our-team',
+						'posts_per_page' => 10,
+						'paged' => $paged
+						);
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post(); 
+					$terms = get_the_terms( $post->ID, 'category' );           
+					if ( $terms && ! is_wp_error( $terms ) ) : 
+						$links = array();
+					foreach ( $terms as $term ) {
+						$links[] = $term->name;
+					}
+					$tax_links = join( " ", str_replace(' ', '-', $links));          
+					$tax = strtolower($tax_links);
+					else :  
+						$tax = '';          
+					endif; ?>
 
-				<div class="all isotope-item col-xs-6 col-sm-4">
-					<div class="affiliation-started">
-						<h2>READY TO GET STARTED?</h2>
-						<button>REQUEST A QUOTE</button>
-					</div>
-				</div>
-			</div>
+					<?php
+					$post_thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_team_member');
+					$thumb_url	= $post_thumb[0];
+					$post_url	= get_permalink();
+					$content 	= get_the_content();
+					?>
+					<div class="all post-item 
+					<?php if ( has_post_thumbnail() ) {
+						echo "col-xs-6 col-sm-4";
+					} else {
+						echo "col-xs-6 col-sm-4";
+					} ?>
+					<?php echo $tax; ?> ">
+					<?php if( has_post_thumbnail() ): ?>
+						<div class="thumbnail thumbnail-hover" style="background-image: url('<?php echo $thumb_url; ?>'); ">
+							<div class="blog-img">
+								<img class="img-responsive" src="<?php echo $thumb_url; ?>" >
+							</div>
+							<a href="<?php echo $post_url ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
+						</div>
+					<?php else : ?>
+						<!--    NO THUMBNAIL -->
+					<?php endif; ?>
+					<div class="entry" style="
+					<?php if( has_post_thumbnail() ): ?>
+					width: 50%;
+				<?php else : ?>
+				width: 100%;
+			<?php endif; ?>
+			">
+			<h3><a href="<?php echo $post_url ?>"> <?php the_title() ?> </a></h3>
 		</div>
 	</div>
-</section><!-- .affiliation-contents -->
+<?php endwhile; ?>
+<div class="grid-sizer col-xs-12 col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<?php if (function_exists("pagination")) {
+			pagination($loop->max_num_pages);
+		} ?>
+	</div>
+</div>
+</div>
+</section><!-- .blog-contents -->
+
+<section class="container page-contents">
+	<div class="row content-holder">
+		<div class="col-xs-12">
+			<?php //the_content(); ?>
+		</div>
+	</div>
+</section><!-- .page-contents -->
 
 </main><!-- #main -->
 </div><!-- .container -->

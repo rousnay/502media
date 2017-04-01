@@ -28,23 +28,6 @@ get_header(); ?>
 	<section class="container page-header">
 		<div class="col-xs-12">
 			<?php while ( have_posts() ) : the_post(); the_content(); endwhile; ?>
-			<div id="filters-dropdown" class="select-filter">
-				<select class="filtering">
-					<option value=".all">All Categories</option>
-					<?php $args = array(
-						'orderby' => 'id',
-						'post_type' => 'post'
-						// 'hide_empty'=> 0, // to show uncategorized
-						);
-					$categories = get_categories($args);
-					foreach ($categories as $cat) {
-						$tax_slug = $cat->slug;
-						$tax_name = $cat->name;
-						$tax_link = strtolower($tax_slug);
-						echo "<option value='.$tax_link'>$tax_name</option>";
-					} ?>
-				</select>
-			</div>
 		</div>
 	</section><!-- .page-header -->
 
@@ -55,7 +38,7 @@ get_header(); ?>
 					<?php 
 					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 					$args = array(
-						'post_type' => 'post',
+						'post_type' => 'our-work',
 						'posts_per_page' => 10,
 						'paged' => $paged
 						);
@@ -74,14 +57,14 @@ get_header(); ?>
 					endif; ?>
 
 					<?php
-					$post_thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_blog_listing');
+					$post_thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_work_mid');
 					$thumb_url	= $post_thumb[0];
 					$post_url	= get_permalink();
 					$content 	= get_the_content();
 					?>
 					<div class="all post-item 
 					<?php if ( has_post_thumbnail() ) {
-						echo "col-xs-12 col-sm-6";
+						echo "col-xs-6 col-sm-3";
 					} else {
 						echo "col-xs-6 col-sm-3";
 					} ?>
@@ -104,10 +87,6 @@ get_header(); ?>
 			<?php endif; ?>
 			">
 			<h3><a href="<?php echo $post_url ?>"> <?php the_title() ?> </a></h3>
-			<div class="entry-content"><?php echo wp_trim_words( $content , '27' ) ?></div>
-			<div class="entry-footer">
-				<span class="date"> <i class="fa fa-clock-o"></i> <?php the_time(get_option('date_format')) ?></span>
-			</div>
 		</div>
 	</div>
 <?php endwhile; ?>

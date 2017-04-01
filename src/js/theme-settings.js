@@ -112,7 +112,7 @@ sideHeaderInit();
 		// for affiliation logos
 		if ($.isFunction($.fn.imagesLoaded) ) {
 
-			var container1	= '#logo-listing-isotope';
+			var container1	= '#team-listing-isotope';
 			var selector1	= '.isotope-item';
 
 			$(container1).imagesLoaded( function() {

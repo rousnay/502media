@@ -11999,7 +11999,7 @@ footer#colophon .container {
 }
 /* line 8, src/sass/site/layout/_footer.scss */
 footer#colophon .footer-banner {
-  background-image: url("images/footer-banner.jpg");
+  background-image: url("images/footer-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -12114,7 +12114,7 @@ footer#colophon .footer-banner .footer-banner-text h3 {
 /* line 1, src/sass/site/page-template/_global.scss */
 ::selection {
   color: #ffffff !important;
-  background: #bcab7a !important;
+  background: #d38d29 !important;
 }
 
 /* line 7, src/sass/site/page-template/_global.scss */

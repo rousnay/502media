@@ -17,6 +17,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+	
+	<script src="https://use.typekit.net/pkg3bkv.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body id="theme_502media-wp" <?php body_class(); ?>>

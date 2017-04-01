@@ -48,11 +48,15 @@ function theme_502media_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'theme_502media_feature_img', 1000, 310, array( 'center', 'center' ) );
+	add_image_size( 'theme_502media_feature_img', 1024, 345, array( 'center', 'center' ) );
 
-	add_image_size( 'theme_502media_blog_listing', 500, 500, array( 'center', 'center' ) );
+	add_image_size( 'theme_502media_team_member', 280, 345, array( 'center', 'center' ) );
 
-	add_image_size( 'theme_502media_related_post', 475, 280, array( 'center', 'center' ) );
+	add_image_size( 'theme_502media_work_big', 520, 430, array( 'center', 'center' ) );
+
+	add_image_size( 'theme_502media_work_mid', 420, 250, array( 'center', 'center' ) );
+
+	add_image_size( 'theme_502media_work_sm', 320, 200, array( 'center', 'center' ) );
 
 
 	/*
