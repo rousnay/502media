@@ -1,11 +1,12 @@
 $font__main: sans-serif;
-$font_theme: 'CeraBasic';
-$font_backup: Arial, Helvetica, sans-serif;
+$font_theme: 'soleil';
+// $font_backup: Arial, Helvetica, sans-serif;
+$font_backup: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-$font1 : "CeraBasic", $font_backup;
+$font1 : "soleil", $font_backup;
 $font2 : "ProximaNova", $font_backup;
 $font3 : "Questrial", $font_backup;

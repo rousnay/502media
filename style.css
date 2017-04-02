@@ -11163,7 +11163,7 @@ html {
 
 /* line 8, src/sass/typography/_typography.scss */
 body {
-  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
+  font-family: "soleil", sans-serif;
   font-size: 100%;
   font-size: 1rem;
   line-height: 1.5;
@@ -11186,7 +11186,7 @@ textarea {
 
 /* line 1, src/sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
+  font-family: "soleil", sans-serif;
   color: #4b494b;
   clear: both;
 }
@@ -11575,7 +11575,7 @@ a:hover, a:active {
 }
 /* line 18, src/sass/navigation/_menus.scss */
 .main-navigation #header-menu-con-id a {
-  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
+  font-family: "CeraBasic", sans-serif;
   display: block;
   text-decoration: none;
 }
@@ -12223,14 +12223,14 @@ body.page-template-page-vc .site-content, body.page-template-page-hard-coded .si
 .page-header h1 {
   font-size: 30px;
   font-weight: bold;
-  font-family: "CeraBasic", Arial, Helvetica, sans-serif;
+  font-family: "soleil", sans-serif;
   margin-top: 37px;
   letter-spacing: 1.5px;
 }
 /* line 106, src/sass/site/page-template/_global.scss */
 .page-header h4 {
   font-size: 18px;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   line-height: 21px;
   max-width: 620px;
   margin: 14px auto;
@@ -12264,14 +12264,13 @@ section.page-banner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  box-shadow: inset 0px 30px 36px -34px rgba(0, 0, 0, 0.4);
 }
-/* line 141, src/sass/site/page-template/_global.scss */
+/* line 140, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-holder {
   position: relative;
   height: 265px;
 }
-/* line 146, src/sass/site/page-template/_global.scss */
+/* line 145, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-card {
   position: absolute;
   max-width: 516px;
@@ -12284,14 +12283,14 @@ section.page-banner .banner-card {
   bottom: 30px;
   left: -8%;
 }
-/* line 157, src/sass/site/page-template/_global.scss */
+/* line 156, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-card p {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
   margin-bottom: 23px;
 }
-/* line 163, src/sass/site/page-template/_global.scss */
+/* line 162, src/sass/site/page-template/_global.scss */
 section.page-banner .banner-card h3 {
   font-weight: bold;
   font-size: 21px;
@@ -12300,7 +12299,7 @@ section.page-banner .banner-card h3 {
   /* margin-top: 1px; */
 }
 
-/* line 175, src/sass/site/page-template/_global.scss */
+/* line 174, src/sass/site/page-template/_global.scss */
 .ms-container h1 {
   font-family: "CeraBasic", Arial, Helvetica, sans-serif;
   color: #f1f2f2;
@@ -12308,7 +12307,7 @@ section.page-banner .banner-card h3 {
   letter-spacing: 1px;
   font-size: 1.8em;
 }
-/* line 182, src/sass/site/page-template/_global.scss */
+/* line 181, src/sass/site/page-template/_global.scss */
 .ms-container h3 {
   font-family: "ProximaNova", Arial, Helvetica, sans-serif;
   color: #f1f2f2;
@@ -12318,7 +12317,7 @@ section.page-banner .banner-card h3 {
   line-height: 1.2em;
   margin-top: 10px;
 }
-/* line 193, src/sass/site/page-template/_global.scss */
+/* line 192, src/sass/site/page-template/_global.scss */
 .ms-container .ms-bullets .ms-bullets-count .ms-bullet {
   width: 14px;
   height: 14px;
@@ -12326,36 +12325,36 @@ section.page-banner .banner-card h3 {
   background-color: #ffffff;
   border-radius: 50%;
 }
-/* line 200, src/sass/site/page-template/_global.scss */
+/* line 199, src/sass/site/page-template/_global.scss */
 .ms-container .ms-bullets .ms-bullets-count .ms-bullet-selected {
   background-color: #bcab7a !important;
 }
 
-/* line 209, src/sass/site/page-template/_global.scss */
+/* line 208, src/sass/site/page-template/_global.scss */
 #company-logo-slider {
   padding: 5px 45px;
   background: transparent;
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 214, src/sass/site/page-template/_global.scss */
+/* line 213, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-item {
   opacity: .35;
   transition: all 200ms ease-out;
 }
-/* line 217, src/sass/site/page-template/_global.scss */
+/* line 216, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-item:hover {
   opacity: 1;
 }
-/* line 220, src/sass/site/page-template/_global.scss */
+/* line 219, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-item .thumbnail {
   background-color: transparent;
 }
-/* line 224, src/sass/site/page-template/_global.scss */
+/* line 223, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-pagination {
   display: none;
 }
-/* line 228, src/sass/site/page-template/_global.scss */
+/* line 227, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons div {
   position: absolute;
   display: block;
@@ -12367,22 +12366,22 @@ section.page-banner .banner-card h3 {
   background-repeat: no-repeat;
   opacity: 1;
 }
-/* line 238, src/sass/site/page-template/_global.scss */
+/* line 237, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons div i {
   display: none;
 }
-/* line 242, src/sass/site/page-template/_global.scss */
+/* line 241, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons .owl-prev {
   left: 0px !important;
   background-position-x: -26px;
 }
-/* line 246, src/sass/site/page-template/_global.scss */
+/* line 245, src/sass/site/page-template/_global.scss */
 #company-logo-slider .owl-buttons .owl-next {
   right: 0px !important;
   background-position-x: 3px;
 }
 
-/* line 254, src/sass/site/page-template/_global.scss */
+/* line 253, src/sass/site/page-template/_global.scss */
 .link-full {
   display: block;
   position: absolute;
@@ -12395,12 +12394,12 @@ section.page-banner .banner-card h3 {
   filter: alpha(opacity=0);
 }
 
-/* line 266, src/sass/site/page-template/_global.scss */
+/* line 265, src/sass/site/page-template/_global.scss */
 iframe {
   border: none !important;
 }
 
-/* line 270, src/sass/site/page-template/_global.scss */
+/* line 269, src/sass/site/page-template/_global.scss */
 .wpb_wrapper iframe {
   text-align: center;
   position: absolute;
@@ -12413,96 +12412,96 @@ iframe {
 }
 
 @media (min-width: 1118px) and (max-width: 1260px) {
-  /* line 283, src/sass/site/page-template/_global.scss */
+  /* line 282, src/sass/site/page-template/_global.scss */
   .banner-card {
     left: calc( 543px - ( 100vw / 2 )) !important;
   }
 }
 @media (max-width: 1117px) {
-  /* line 289, src/sass/site/page-template/_global.scss */
+  /* line 288, src/sass/site/page-template/_global.scss */
   .banner-card {
     left: -15px !important;
   }
 }
 @media (max-width: 1100px) {
-  /* line 295, src/sass/site/page-template/_global.scss */
+  /* line 294, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card {
     max-width: 450px;
     padding: 27px 30px 15px 99px;
   }
 
-  /* line 299, src/sass/site/page-template/_global.scss */
+  /* line 298, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card h3 {
     font-size: 18px;
   }
 
-  /* line 302, src/sass/site/page-template/_global.scss */
+  /* line 301, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card p {
     font-size: 16px;
     margin-bottom: 18px;
   }
 
-  /* line 306, src/sass/site/page-template/_global.scss */
+  /* line 305, src/sass/site/page-template/_global.scss */
   .page-header h1 {
     font-size: 26px;
   }
 
-  /* line 309, src/sass/site/page-template/_global.scss */
+  /* line 308, src/sass/site/page-template/_global.scss */
   .page-header h4 {
     font-size: 16px;
   }
 }
 @media (max-width: 800px) {
-  /* line 314, src/sass/site/page-template/_global.scss */
+  /* line 313, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card {
     max-width: 400px;
     padding: 27px 30px 15px 75px;
   }
 
-  /* line 318, src/sass/site/page-template/_global.scss */
+  /* line 317, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card h3 {
     font-size: 16px;
     margin-top: 10px;
   }
 
-  /* line 322, src/sass/site/page-template/_global.scss */
+  /* line 321, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card p {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 0;
   }
 
-  /* line 327, src/sass/site/page-template/_global.scss */
+  /* line 326, src/sass/site/page-template/_global.scss */
   .page-header h1 {
     font-size: 24px;
   }
 }
 @media (max-width: 767px) {
-  /* line 333, src/sass/site/page-template/_global.scss */
+  /* line 332, src/sass/site/page-template/_global.scss */
   .page-header h4 {
     font-size: 14px;
   }
 }
 @media (max-width: 550px) {
-  /* line 339, src/sass/site/page-template/_global.scss */
+  /* line 338, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-holder {
     height: 220px;
   }
 
-  /* line 342, src/sass/site/page-template/_global.scss */
+  /* line 341, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card {
     max-width: 400px;
     padding: 15px 15px 15px 40px;
     bottom: 20px;
   }
 
-  /* line 347, src/sass/site/page-template/_global.scss */
+  /* line 346, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card p {
     font-size: 13px;
     line-height: 18px;
   }
 
-  /* line 351, src/sass/site/page-template/_global.scss */
+  /* line 350, src/sass/site/page-template/_global.scss */
   section.page-banner .banner-card h3 {
     font-size: 14px;
   }
@@ -12584,7 +12583,7 @@ body.page-template-page-blog #post-listing-isotope .post-item .entry h3 {
 /* line 59, src/sass/site/page-template/_blog.scss */
 body.page-template-page-blog #post-listing-isotope .post-item .entry .entry-content {
   margin: 15px 0 20px 0;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 
 /* line 69, src/sass/site/page-template/_blog.scss */
@@ -12818,7 +12817,7 @@ body.page-template-default h4 {
   font-size: 18px;
   font-weight: 600;
   color: #4b494b;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-style: italic;
 }
 /* line 24, src/sass/site/page-template/_default-page.scss */
@@ -12826,20 +12825,20 @@ body.page-template-default h5 {
   font-size: 18px;
   font-weight: bold;
   color: #bcab7a;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 /* line 30, src/sass/site/page-template/_default-page.scss */
 body.page-template-default h6 {
   font-size: 18px;
   font-weight: bold;
   color: #575757;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 /* line 36, src/sass/site/page-template/_default-page.scss */
 body.page-template-default p {
   font-size: 18px;
   color: #575757;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 /* line 41, src/sass/site/page-template/_default-page.scss */
 body.page-template-default footer#colophon {
@@ -12857,7 +12856,7 @@ body.page-template-default footer#colophon {
 
 /* line 5, src/sass/site/page-template/_single-post.scss */
 header.entry-header h1 {
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #575756;
@@ -12898,7 +12897,7 @@ body.single-post .single-post-contents h4 {
   font-size: 18px;
   font-weight: 600;
   color: #4b494b;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-style: italic;
 }
 /* line 43, src/sass/site/page-template/_single-post.scss */
@@ -12906,20 +12905,20 @@ body.single-post .single-post-contents h5 {
   font-size: 18px;
   font-weight: bold;
   color: #bcab7a;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 /* line 49, src/sass/site/page-template/_single-post.scss */
 body.single-post .single-post-contents h6 {
   font-size: 18px;
   font-weight: bold;
   color: #575757;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 /* line 55, src/sass/site/page-template/_single-post.scss */
 body.single-post .single-post-contents p {
   font-size: 18px;
   color: #575757;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 /* line 62, src/sass/site/page-template/_single-post.scss */
 body.single-post footer#colophon {
@@ -13130,7 +13129,7 @@ span label {
 /* line 85, src/sass/site/page-template/_contact.scss */
 .gform_wrapper .gform_page_footer input[type="button"], .gform_wrapper .gform_page_footer input[type="submit"] {
   font-size: 16px !important;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   padding: 15px 38px;
   color: #ffffff;
   width: initial !important;
@@ -13244,7 +13243,7 @@ body .gform_wrapper ul li.gfield {
   -moz-appearance: none;
   appearance: none;
   color: #bcab7a;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 14px;
   line-height: 30px;
   text-indent: 45px;
@@ -13345,7 +13344,7 @@ body .gform_wrapper ul li.gfield {
   width: 50%;
   font-size: 14px;
   font-weight: 400;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   letter-spacing: 1px;
   text-align: center;
   color: #bcab7a;
@@ -13824,7 +13823,7 @@ body.page-template-page-affiliations .affiliation-contents #logo-listing-isotope
   background-color: transparent;
   border: 2px solid #938055;
   color: #938055;
-  font-family: "ProximaNova", Arial, Helvetica, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   text-align: center;
   letter-spacing: 1.5px;
   padding: 15px 30px;
