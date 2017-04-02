@@ -18,7 +18,6 @@
 					<h1>Ready to See More</h1>
 					<h3>Learn our Process</h3>
 				</div>
-				
 			</div>
 		</div>
 		<div class="row">

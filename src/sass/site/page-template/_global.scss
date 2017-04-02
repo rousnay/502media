@@ -137,36 +137,27 @@ section.page-banner{
   background-position: center center;
   background-size: cover;
 
-  .banner-holder {
-    position: relative;
-    height: 265px;
-  }
-
-  .banner-card {
-    position: absolute;
-    max-width: 516px;
-    background: $color_theme_502media_yellow;
-    background: -webkit-linear-gradient(left, #bcab7a , #938055); 
-    background: -o-linear-gradient(right, #bcab7a , #938055);
-    background: -moz-linear-gradient(right, #bcab7a , #938055);
-    background: linear-gradient(to right, #bcab7a , #938055);
-    padding: 27px 53px 15px 99px;
-    bottom: 30px;
-    left: -8%;
-    p {
-      font-size: 18px;
-      line-height: 22px;
-      color: #fff;
-      margin-bottom: 23px;
+        .header-banner{
+        background-image: url('images/footer-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        line-height: 350px;
+        text-align: center;
+        .header-banner-text {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            h1{
+                font-size: 72px;
+                color: #fff;
+            }
+            h3{
+                font-size: 30px;
+                color: #fff;
+            }
+        }
     }
-    h3 {
-      font-weight: bold;
-      font-size: 21px;
-      color: #fff;
-      text-align: right;
-      /* margin-top: 1px; */
-    }
-  }
 }
 
 //Main slider (MS)
