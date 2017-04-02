@@ -15,3 +15,81 @@
 @import "../../components/font-awesome/scss/rotated-flipped";
 @import "../../components/font-awesome/scss/stacked";
 @import "../../components/font-awesome/scss/icons";
+
+/*
+Custom Design
+-----------------
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+  <i class="fa fa-lock fa-stack-1x"></i>
+</span>
+</br>
+<span class="fa-stack fa-2x">
+  <i class="fa fa-circle fa-stack-2x icon-background2"></i>
+  <i class="fa fa-lock fa-stack-1x"></i>
+</span>
+</br>
+<span class="fa-stack fa-3x">
+  <i class="fa fa-circle fa-stack-2x icon-background3"></i>
+  <i class="fa fa-lock fa-stack-1x"></i>
+</span>
+</br>
+<span class="fa-stack fa-4x">
+  <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+  <i class="fa fa-lock fa-stack-1x"></i>
+</span>
+</br>
+<span class="fa-stack fa-4x">
+  <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+   <i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
+
+  <i class="fa fa-lock fa-stack-1x"></i>
+</span>
+</br>
+<span class="fa-stack fa-5x">
+  <i class="fa fa-circle fa-stack-2x icon-background5"></i>
+  <i class="fa fa-camera fa-stack-1x"></i>
+</span>
+<i class="fa fa-bicycle fa-5x circle-icon"/>
+ */
+
+.icon-background1 {
+    color: #ffc0ff;
+}
+
+.icon-background2 {
+    color: #ffffc0;
+}
+
+.icon-background3 {
+    color: #c0ffff;
+}
+
+.icon-background4 {
+    color: transparent;
+}
+
+.icon-background6 {
+    color: #4a4a4a;
+}
+
+.icon-background5 {
+    color: #c0c0ff;
+}
+
+.circle-icon2 {
+    background: #ffc0c0;
+    padding:30px;
+    border-radius: 50%;
+}
+
+.circle-icon {
+    background: #ffc0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}

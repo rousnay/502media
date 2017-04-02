@@ -20,25 +20,31 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row footer-edge">
 			<div class="col-sm-6 social-media-links">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="contact-info">
-							<?php dynamic_sidebar( 'footer_widgets_1' ); ?>
-						</div>
-						<div class="quick-links">
-							<?php dynamic_sidebar( 'footer_widgets_2' ); ?>
-						</div>
-					</div>
-				</div>
+
+				<a href="#">
+					<span class="fa-stack fa-1x">
+						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
+						<i class="fa fa-facebook fa-stack-1x"></i>
+					</span>
+				</a>
+				<a href="#">
+					<span class="fa-stack fa-1x">
+						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
+						<i class="fa fa-twitter fa-stack-1x"></i>
+					</span>
+				</a>
+				<a href="#">
+					<span class="fa-stack fa-1x">
+						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
+						<i class="fa fa-instagram fa-stack-1x"></i>
+					</span>
+				</a>
+
 			</div>
 			<div class="col-sm-6 get-in-touch">
-				<div class="row">
-					<div class="col-sm-12">
-						<?php dynamic_sidebar( 'footer_widgets_3' ); ?>
-					</div>
-				</div>
+				<a  href="#"> <span>Let's Get In Touch </span> <i class="fa fa-comment-o" aria-hidden="true"></i> </a>
 			</div>
 		</div>
 	</section>
