@@ -36,33 +36,10 @@ get_header(); ?>
 	<section class="container affiliation-contents">
 		<div class="row content-holder">
 			<div class="col-xs-12">
-				<div id="logo-listing-isotope" class="row">
-					<?php if( have_rows('company_logo', 'option') ): ?> <!-- START company_logo query -->
-						<?php while( have_rows('company_logo', 'option') ): the_row(); 
-						$logo_url = get_sub_field('logo');
-						$company_link = get_sub_field('link');
-						?>
-						<div class="all isotope-item col-xs-6 col-sm-4">
-							<div class="thumbnail thumbnail-hover">
-								<div class="logo-img">
-									<img class="img-responsive" src="<?php echo $logo_url; ?>" >
-								</div>
-								<a href="<?php echo $company_link ?>" class="overlay"></a>
-							</div>
-						</div>
-					<?php endwhile; ?>
-				<?php endif; ?> <!-- END company_logo query -->
-
-				<div class="all isotope-item col-xs-6 col-sm-4">
-					<div class="affiliation-started">
-						<h2>READY TO GET STARTED?</h2>
-						<button>REQUEST A QUOTE</button>
-					</div>
-				</div>
+				<h1>FROM 'page-template' FOLDER</h1>
 			</div>
 		</div>
-	</div>
-</section><!-- .affiliation-contents -->
+	</section><!-- .affiliation-contents -->
 
 </main><!-- #main -->
 </div><!-- .container -->

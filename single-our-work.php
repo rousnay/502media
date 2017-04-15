@@ -1,9 +1,9 @@
 <?php
 /**
-* Template Name: Single Team Member
-*
-* @package 502MEDIA
-*/
+ * Template Name: Single Project
+ *
+ * @package 502MEDIA
+ */
 get_header(); ?>
 
 <div id="content" class="site-content full-width">
@@ -12,10 +12,12 @@ get_header(); ?>
 		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
 		$url_feature = $thumb_feature[0]; ?> 
 		<section class="container page-banner" style="background-image: url('<?php echo $url_feature; ?>');">
-			<div class="col-sm-12 header-banner">
-				<div class="header-banner-text">
-					<?php the_title( '<h1>', '</h1>' ); ?>
-					<h3>Sub-title to be added here</h3>
+			<div class="row content-holder">
+				<div class="col-sm-12 header-banner">
+					<div class="header-banner-text">
+						<?php the_title( '<h1>', '</h1>' ); ?>
+						<h3>Sub-title to be added here</h3>
+					</div>
 				</div>
 			</div>
 		</section><!-- .page-banner -->
@@ -30,14 +32,6 @@ get_header(); ?>
 			</div>
 		</div>
 	</section><!-- .page-header -->
-
-	<section class="container affiliation-contents">
-		<div class="row content-holder">
-			<div class="col-xs-12">
-				<h1>FROM 'page-template' FOLDER</h1>
-			</div>
-		</div>
-	</section><!-- .affiliation-contents -->
 
 </main><!-- #main -->
 </div><!-- .container -->

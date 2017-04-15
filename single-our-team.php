@@ -31,14 +31,6 @@ get_header(); ?>
 		</div>
 	</section><!-- .page-header -->
 
-	<section class="container affiliation-contents">
-		<div class="row content-holder">
-			<div class="col-xs-12">
-				<h1>FROM 'page-template' FOLDER</h1>
-			</div>
-		</div>
-	</section><!-- .affiliation-contents -->
-
 </main><!-- #main -->
 </div><!-- .container -->
 
