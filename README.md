@@ -19,4 +19,4 @@ Tools
 
 Copyright
 ---------
-© 2014-2016, [502 Media Group](http://www.theme_502mediagroup.com/)
+© 2017, [502 Media Group](http://www.theme_502mediagroup.com/)
