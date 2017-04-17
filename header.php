@@ -46,7 +46,9 @@
 					</div>
 				</div>
 				<div class="row header-menus">
-					<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+					<!-- <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button> -->
+					<button id="hamburger" class="c-hamburger c-hamburger--htx"><span>toggle menu</span></button>
 				</div>
+
 			</div>
 		</header><!-- #masthead -->

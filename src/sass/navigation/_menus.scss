@@ -100,68 +100,62 @@
 }
 
 
-/* Menu TOGGLE button*/
-.mm-menu-toggle {
+/*Hamburger Menu*/
+button#hamburger{
+  z-index: 9999;
   right: 53px;
   top: 35px;
-  width: 35px;
+  width: 36px;
   left: inherit;
   left: initial;
-  position:absolute!important;
-}
-
-button {
-  &#mm-menu-toggle{
-    // display: none;
-    border:none;
-    outline: none;
-    box-shadow:none;
+  overflow: inherit;
+  overflow: initial;
+  position: absolute !important;
+  background-color: transparent!important;
+  border:none!important;
+  outline: none!important;
+  &:hover, &:active, &:focus{
     background-color: transparent!important;
-    &:hover, &:active, &:focus{
-      background-color: transparent!important;
+    border:none!important;
+  }
+  span {
+    top: 10px;
+    left: 0px;
+    right: 1px;
+    height: 4px;
+    background: #fff;
+    &:before, &:after {
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #fff;
+      content: "";
     }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+      bottom: -10px;
+    }
+  }
+  &.is-active {
+
+  span {
+    background:none;
+    &:before, &:after {
+
+    }
+    &:before {
+      top: 0px;
+    }
+    &:after {
+      bottom: 0px;
+    }
+  }
+
+
+
   }
 }
 
-.mm-menu-toggle{
-  background: linear-gradient(0deg, rgba(188, 171, 122, 0),
-    rgba(188, 171, 122, 0) 7px, #bcab7a 7px, #bcab7a 11px,
-    rgba(188, 171, 122, 0) 11px, rgba(188, 171, 122, 0) 18px)
-
-}
-.mm-menu-toggle.active{
-  background:transparent;
-}
-
-.mm-menu-toggle.active::before {
-  width: 100%;
-  height: 3px;
-  top: 8px;
-  transform: rotate(45deg);
-  transition-delay: 0s, 0.3s;
-}
-
-.mm-menu-toggle::before {
-
-  transition-property: top, transform;
-}
-
-.mm-menu-toggle::after {
-  transition-property: bottom, transform;
-
-}
-
-.mm-menu-toggle.active::after {
-  width: 100%;
-  height: 3px;
-  bottom: 7px;
-  transform: rotate(-45deg);
-  transition-delay: 0s, 0.3s;
-}
-
-.mm-menu-toggle::after, .mm-menu-toggle::before {
-  background-color: $color_theme_502media_yellow;
-  transform-origin: initial;
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
+/* Menu TOGGLE button*/
