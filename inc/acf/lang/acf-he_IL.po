@@ -4,13 +4,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://support.advancedcustomfields.com\n"
 "POT-Creation-Date: 2015-08-11 23:23+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ralf Koller <r.koller@gmail.com>\n"
+"Last-Translator: Elliot Condon <e@elliotcondon.com>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
 "Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.3\n"
+"X-Generator: Poedit 1.8.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -261,9 +261,10 @@ msgstr ""
 msgid "Super Admin"
 msgstr "מנהל על"
 
-#: admin/field-group.php:818 admin/field-group.php:826 admin/field-group.php:840
-#: admin/field-group.php:847 admin/field-group.php:862 admin/field-group.php:872
-#: fields/file.php:235 fields/image.php:226 pro/fields/gallery.php:653
+#: admin/field-group.php:818 admin/field-group.php:826
+#: admin/field-group.php:840 admin/field-group.php:847
+#: admin/field-group.php:862 admin/field-group.php:872 fields/file.php:235
+#: fields/image.php:226 pro/fields/gallery.php:653
 msgid "All"
 msgstr "הכל"
 
@@ -575,6 +576,10 @@ msgstr "מחיקה"
 #: fields/taxonomy.php:886
 msgid "Error"
 msgstr "שגיאה"
+
+#: fields/oembed.php:220 fields/taxonomy.php:900
+msgid "Error."
+msgstr "שגיאה."
 
 #: admin/views/field-group-field.php:68
 msgid "Field type does not exist"
@@ -1169,9 +1174,9 @@ msgid ""
 "external file."
 msgstr ""
 "ניתן להשתמש בקוד הבא כדי לרשום גרסה מקומית של קבוצות השדה הנבחרות. קבוצת שדות "
-"מקומית יכולה להביא לתועלות רבות כמו זמני טעינה מהירים יותר, בקרת גרסאות "
-"ושדות/הגדרות דינמיות. פשוט העתיקו והדביקו את הקוד הבא לקובץ functions‪.‬php "
-"שבערכת העיצוב שלכם או הוסיפו אותו דרך קובץ חיצוני."
+"מקומית יכולה להביא לתועלות רבות כמו זמני טעינה מהירים יותר, בקרת גרסאות ושדות/"
+"הגדרות דינמיות. פשוט העתיקו והדביקו את הקוד הבא לקובץ functions‪.‬php שבערכת "
+"העיצוב שלכם או הוסיפו אותו דרך קובץ חיצוני."
 
 #: admin/views/settings-tools.php:5
 msgid "Select Field Groups"
@@ -1244,11 +1249,7 @@ msgid "Site is up to date"
 msgstr ""
 
 #: admin/views/update-network.php:62 admin/views/update.php:16
-msgid "Database Upgrade complete"
-msgstr ""
-
-#: admin/views/update-network.php:62
-msgid "Return to network dashboard"
+msgid "Database Upgrade complete. <a href=\"%s\">Return to network dashboard</a>"
 msgstr ""
 
 #: admin/views/update-network.php:101 admin/views/update-notice.php:35
@@ -1298,7 +1299,7 @@ msgid "See what's new"
 msgstr "בואו לראות מה חדש"
 
 #: admin/views/update.php:110
-msgid "No updates available"
+msgid "No updates available."
 msgstr ""
 
 #: api/api-helpers.php:821
@@ -1507,7 +1508,7 @@ msgid "Show a different month"
 msgstr "הצגת חודש אחר"
 
 #: fields/date_picker.php:149
-msgid "Display format"
+msgid "Display Format"
 msgstr "פורמט תצוגה"
 
 #: fields/date_picker.php:150
@@ -1821,8 +1822,8 @@ msgid "Enter URL"
 msgstr "הקלד כתובת URL"
 
 #: fields/oembed.php:212
-msgid "No embed found for the given URL"
-msgstr "לא נמצא קוד הטמעה לכתובת ה-URL הנתונה"
+msgid "No embed found for the given URL."
+msgstr "לא נמצא קוד הטמעה לכתובת ה-URL הנתונה."
 
 #: fields/oembed.php:248 fields/oembed.php:259
 msgid "Embed Size"
@@ -2228,12 +2229,8 @@ msgid "Options Updated"
 msgstr "האפשרויות עודכנו"
 
 #: pro/admin/options-page.php:304
-msgid "No Custom Field Groups found for this options page"
-msgstr "אף קבוצת שדות לא נמצאה בפח"
-
-#: pro/admin/options-page.php:304
-msgid "Create a Custom Field Group"
-msgstr "יצירת קבוצת שדות מיוחדים"
+msgid "No Custom Field Groups found for this options page. <a href=\"%s\">Create a Custom Field Group</a>"
+msgstr "אף קבוצת שדות לא נמצאה בפח. <a href=\"%s\">יצירת קבוצת שדות מיוחדים</a>"
 
 #: pro/admin/settings-updates.php:137
 msgid "<b>Error</b>. Could not connect to update server"

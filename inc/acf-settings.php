@@ -1,7 +1,9 @@
 <?php 
+// Include ACF
+include_once( get_stylesheet_directory() . '/inc/acf/acf.php' );
 
 // Hide ACF field group menu item
-//add_filter('acf/settings/show_admin', '__return_false');
+// add_filter('acf/settings/show_admin', '__return_false');
 
 // Customize ACF path
 add_filter('acf/settings/path', 'my_acf_settings_path');
@@ -9,7 +11,7 @@ add_filter('acf/settings/path', 'my_acf_settings_path');
 function my_acf_settings_path( $path ) {
  
     // update path
-    $path = get_stylesheet_directory() . '/includes/acf/';
+    $path = get_stylesheet_directory() . '/inc/acf/';
     
     // return
     return $path;
@@ -21,7 +23,7 @@ add_filter('acf/settings/dir', 'my_acf_settings_dir');
 function my_acf_settings_dir( $dir ) {
  
     // update path
-    $dir = get_stylesheet_directory_uri() . '/includes/acf/';
+    $dir = get_stylesheet_directory_uri() . '/inc/acf/';
     
     // return
     return $dir;
@@ -33,7 +35,7 @@ add_filter('acf/settings/save_json', 'my_acf_json_save_point');
 function my_acf_json_save_point( $path ) {
     
     // update path
-    $path = get_stylesheet_directory() . '/includes/acf-json';
+    $path = get_stylesheet_directory() . '/inc/acf-json';
     
     // return
     return $path; 
@@ -48,7 +50,7 @@ function my_acf_json_load_point( $paths ) {
     unset($paths[0]);
     
     // append path
-    $paths[] = get_stylesheet_directory() . '/includes/acf-json';
+    $paths[] = get_stylesheet_directory() . '/inc/acf-json';
     
     // return
     return $paths;

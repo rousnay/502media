@@ -43,14 +43,11 @@ include_once( get_stylesheet_directory() . '/inc/template-shortcodes.php' );
 // Load Jetpack compatibility file.
 require get_template_directory() . '/inc/jetpack.php';
 
-// ACF
-// include_once( get_stylesheet_directory() . '/inc/acf/acf.php' );
-
 // ACF Settings
-// include_once( get_stylesheet_directory() . '/inc/acf-settings.php' );
+include_once( get_stylesheet_directory() . '/inc/acf-settings.php' );
 
 // Typeahead Settings
-//include_once( get_stylesheet_directory() . '/inc/wp-typeahead.php');
+// include_once( get_stylesheet_directory() . '/inc/wp-typeahead.php');
 
 
 

@@ -52,3 +52,30 @@
 
 			</div>
 		</header><!-- #masthead -->
+
+		<?php if( has_post_thumbnail() ): 
+		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
+		$url_feature = $thumb_feature[0]; ?> 
+		<section class="container page-banner" style="background-image: url('<?php echo $url_feature; ?>');">
+			<div class="row content-holder">
+				<div class="col-sm-12 header-banner">
+					<div class="header-banner-text">
+						<?php //the_title( '<h1>', '</h1>' ); ?>
+						<?php
+						if(get_field('header_title')){
+							echo '<h1>' . get_field('header_title') . '</h1>';
+						}
+						else{
+							the_title( '<h1>', '</h1>' );
+						}
+						if(get_field('header_subtitle')){
+							echo '<h3>' . get_field('header_subtitle') . '</h3>';
+						}
+						?>
+					</div>
+				</div>
+			</div>
+		</section><!-- .page-banner -->
+	<?php else : ?>
+		<!--    NO THUMBNAIL -->
+	<?php endif; ?>

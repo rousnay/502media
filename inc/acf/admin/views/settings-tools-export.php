@@ -7,9 +7,9 @@ $field_groups = acf_extract_var( $args, 'field_groups');
 // replace
 $str_replace = array(
 	"  "			=> "\t",
-	"!!\'"		=>	"'",
-	"'!!"		=>	"",
-	"!!'"		=>	""
+	"'!!__(!!\'"	=> "__('",
+	"!!\', !!\'"	=> "', '",
+	"!!\')!!'"		=> "')"
 );
 
 $preg_replace = array(

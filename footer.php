@@ -15,8 +15,13 @@
 		<div class="row">
 			<div class="col-sm-12 footer-banner">
 				<div class="footer-banner-text">
-					<h1>Ready to See More</h1>
-					<h3>Learn our Process</h3>
+					<?php
+					if(get_field('footer_title')){
+						echo '<h1>' . get_field('footer_title') . '</h1>';
+					}
+					if(get_field('footer_subtitle')){
+						echo '<h3>' . get_field('footer_subtitle') . '</h3>';
+					}?>
 				</div>
 			</div>
 		</div>

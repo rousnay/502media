@@ -69,6 +69,7 @@
 
             jQuery(window).on('scroll', function(e) {
                 sideheader.removeClass('is-visible');
+                $('#hamburger').removeClass("is-active");
                 sideheader.hide(900);
                 jQuery('body').removeClass('sideheader-visible');
             });

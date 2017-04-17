@@ -1,7 +1,8 @@
 <?php 
 
-// global
-global $post;
+// vars
+$field = false;
+$i = 0;
 
 
 // extract args
@@ -46,13 +47,12 @@ $atts['class'] = str_replace('_', '-', $atts['class']);
 	<div class="handle">
 		<ul class="acf-hl acf-tbody">
 			<li class="li-field-order">
-				<span class="acf-icon acf-sortable-handle"><?php echo ($i + 1); ?></span>
+				<span class="acf-icon acf-sortable-handle" title="<?php _e('Drag to reorder','acf'); ?>"><?php echo ($i + 1); ?></span>
 				<pre class="pre-field-key"><?php echo $field['key']; ?></pre>
 			</li>
 			<li class="li-field-label">
 				<strong>
-					<a class="edit-field" title="<?php _e("Edit field",'acf'); ?>" href="#"><?php echo $field['label']; ?></a>
-					<?php if( $field['required'] ): ?><span class="acf-required">*</span><?php endif; ?>
+					<a class="edit-field" title="<?php _e("Edit field",'acf'); ?>" href="#"><?php echo acf_get_field_label($field); ?></a>
 				</strong>
 				<div class="row-options">
 					<a class="edit-field" title="<?php _e("Edit field",'acf'); ?>" href="#"><?php _e("Edit",'acf'); ?></a>
@@ -76,82 +76,68 @@ $atts['class'] = str_replace('_', '-', $atts['class']);
 		<table class="acf-table">
 			<tbody>
 				<?php 
-		
+				
 				// label
-				acf_render_field_wrap(array(
+				acf_render_field_setting($field, array(
 					'label'			=> __('Field Label','acf'),
 					'instructions'	=> __('This is the name which will appear on the EDIT page','acf'),
-					'required'		=> 1,
-					'type'			=> 'text',
 					'name'			=> 'label',
-					'prefix'		=> $field['prefix'],
-					'value'			=> $field['label'],
+					'type'			=> 'text',
+					'required'		=> 1,
 					'class'			=> 'field-label'
-				), 'tr');
+				), true);
 				
 				
 				// name
-				acf_render_field_wrap(array(
+				acf_render_field_setting($field, array(
 					'label'			=> __('Field Name','acf'),
 					'instructions'	=> __('Single word, no spaces. Underscores and dashes allowed','acf'),
-					'required'		=> 1,
-					'type'			=> 'text',
 					'name'			=> 'name',
-					'prefix'		=> $field['prefix'],
-					'value'			=> $field['name'],
+					'type'			=> 'text',
+					'required'		=> 1,
 					'class'			=> 'field-name'
-				), 'tr');
+				), true);
 				
 				
 				// type
-				acf_render_field_wrap(array(
+				acf_render_field_setting($field, array(
 					'label'			=> __('Field Type','acf'),
 					'instructions'	=> '',
 					'required'		=> 1,
 					'type'			=> 'select',
 					'name'			=> 'type',
-					'prefix'		=> $field['prefix'],
-					'value'			=> $field['type'],
-					'choices' 		=> acf_get_field_types(),
+					'choices' 		=> acf_get_grouped_field_types(),
 					'class'			=> 'field-type'
-				), 'tr');
+				), true);
 				
 				
 				// instructions
-				acf_render_field_wrap(array(
+				acf_render_field_setting($field, array(
 					'label'			=> __('Instructions','acf'),
 					'instructions'	=> __('Instructions for authors. Shown when submitting data','acf'),
 					'type'			=> 'textarea',
 					'name'			=> 'instructions',
-					'prefix'		=> $field['prefix'],
-					'value'			=> $field['instructions'],
 					'rows'			=> 5
-				), 'tr');
+				), true);
 				
 				
 				// required
-				acf_render_field_wrap(array(
+				acf_render_field_setting($field, array(
 					'label'			=> __('Required?','acf'),
 					'instructions'	=> '',
-					'type'			=> 'radio',
+					'type'			=> 'true_false',
 					'name'			=> 'required',
-					'prefix'		=> $field['prefix'],
-					'value'			=> $field['required'],
-					'choices'		=> array(
-						1				=> __("Yes",'acf'),
-						0				=> __("No",'acf'),
-					),
-					'layout'		=> 'horizontal',
+					'ui'			=> 1,
 					'class'			=> 'field-required'
-				), 'tr');
-				
-				
-				// type specific settings
-				do_action("acf/render_field_settings/type={$field['type']}", $field);
+				), true);
 				
 				
 				// 3rd party settings
 				do_action('acf/render_field_settings', $field);
+				
+				
+				// type specific settings
+				do_action("acf/render_field_settings/type={$field['type']}", $field);
 				
 				
 				// conditional logic
@@ -169,7 +155,8 @@ $atts['class'] = str_replace('_', '-', $atts['class']);
 					'prepend'		=> __('width', 'acf'),
 					'append'		=> '%',
 					'wrapper'		=> array(
-						'data-name' => 'wrapper'
+						'data-name' => 'wrapper',
+						'class' => 'acf-field-setting-wrapper'
 					)
 				), 'tr');
 				
@@ -205,7 +192,7 @@ $atts['class'] = str_replace('_', '-', $atts['class']);
 					<td class="acf-input">
 						<ul class="acf-hl">
 							<li>
-								<a class="edit-field acf-button grey" title="<?php _e("Close Field",'acf'); ?>" href="#"><?php _e("Close Field",'acf'); ?></a>
+								<a class="button edit-field" title="<?php _e("Close Field",'acf'); ?>" href="#"><?php _e("Close Field",'acf'); ?></a>
 							</li>
 						</ul>
 					</td>
