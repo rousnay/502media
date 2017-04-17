@@ -1,13 +1,13 @@
 {
-    "key": "group_58f492f2f3a6b",
-    "title": "Header Section",
+    "key": "group_58f52a583a162",
+    "title": "Intro",
     "fields": [
         {
-            "key": "field_58f492fd60810",
-            "label": "Header title",
-            "name": "header_title",
+            "key": "field_58f52a640b415",
+            "label": "Intro title",
+            "name": "intro_title",
             "type": "text",
-            "instructions": "if empty, it will use page title instead",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -22,10 +22,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_58f4934b60811",
-            "label": "Header subtitle",
-            "name": "header_subtitle",
-            "type": "text",
+            "key": "field_58f52a750b416",
+            "label": "Intro Paragraph",
+            "name": "intro_paragraph_",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,35 +36,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
             "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_58f4935360812",
-            "label": "Header background image",
-            "name": "header_background_image",
-            "type": "image",
-            "instructions": "if empty, it will use featured image. if no featured image, it will use a gray colored placeholder background image instead",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "rows": "",
+            "new_lines": "wpautop"
         }
     ],
     "location": [
@@ -82,7 +56,7 @@
                 "value": "page"
             },
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "!=",
                 "value": "page-template\/page-home.php"
             }
@@ -102,7 +76,7 @@
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 2,
     "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
@@ -110,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492462549
+    "modified": 1492462658
 }

@@ -16373,7 +16373,6 @@ footer#colophon .container {
 }
 /* line 8, src/sass/site/layout/_footer.scss */
 footer#colophon .footer-banner {
-  background-image: url("images/footer-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -16654,7 +16653,6 @@ section.page-banner {
 }
 /* line 140, src/sass/site/page-template/_global.scss */
 section.page-banner .header-banner {
-  background-image: url("images/footer-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -18166,7 +18164,7 @@ body.page-template-page-home .banner-text h1 {
   text-align: center;
 }
 /* line 39, src/sass/site/page-template/_pages.scss */
-body.page-template-page-home #colophon {
+body.page-template-page-home #colophon, body.page-template-page-home .page-banner {
   display: none !important;
 }
 

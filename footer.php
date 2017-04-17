@@ -11,9 +11,17 @@
 ?>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+	<?php
+	if(get_field('footer_background_image')){
+		$footer_bg_url = get_field('footer_background_image');
+	}
+	else{
+		$footer_bg_url = get_template_directory_uri() . '/images/footer-placeholder-img.png';
+	}
+	?>
 	<section class="container">
 		<div class="row">
-			<div class="col-sm-12 footer-banner">
+			<div class="col-sm-12 footer-banner" style="background-image: url('<?php echo $footer_bg_url; ?>');">
 				<div class="footer-banner-text">
 					<?php
 					if(get_field('footer_title')){

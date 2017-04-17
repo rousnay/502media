@@ -49,7 +49,7 @@
             "label": "Footer background image",
             "name": "footer_background_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "if empty, it will use a gray colored placeholder background image instead",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -82,6 +82,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-template\/page-home.php"
             }
         ],
         [
@@ -107,5 +112,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492425115
+    "modified": 1492462615
 }

@@ -53,14 +53,22 @@
 			</div>
 		</header><!-- #masthead -->
 
-		<?php if( has_post_thumbnail() ): 
-		$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
-		$url_feature = $thumb_feature[0]; ?> 
-		<section class="container page-banner" style="background-image: url('<?php echo $url_feature; ?>');">
+		<?php
+		if(get_field('header_background_image')){
+			$header_bg_url = get_field('header_background_image');
+		}
+		elseif (has_post_thumbnail()){
+			$thumb_feature = wp_get_attachment_image_src( get_post_thumbnail_id(), 'theme_502media_feature_img');
+			$header_bg_url = $thumb_feature[0];
+		}
+		else{
+			$header_bg_url = get_template_directory_uri() . '/images/header-placeholder-img.png';
+		}
+		?>
+		<section class="container page-banner" style="background-image: url('<?php echo $header_bg_url; ?>');">
 			<div class="row content-holder">
 				<div class="col-sm-12 header-banner">
 					<div class="header-banner-text">
-						<?php //the_title( '<h1>', '</h1>' ); ?>
 						<?php
 						if(get_field('header_title')){
 							echo '<h1>' . get_field('header_title') . '</h1>';
@@ -76,6 +84,3 @@
 				</div>
 			</div>
 		</section><!-- .page-banner -->
-	<?php else : ?>
-		<!--    NO THUMBNAIL -->
-	<?php endif; ?>
