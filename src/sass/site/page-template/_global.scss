@@ -1,6 +1,6 @@
 ::selection { 
   color: #ffffff!important;
-  background: rgba(211,141,41,1) !important;
+  background: rgba(196, 22, 255,1) !important;
 }
 body{
   &:not(.page-template-page-home){
@@ -15,7 +15,7 @@ body{
     }
   }
   #page {
-      width: 100%!important;
+    width: 100%!important;
   }
   &.page-template-page-philosophy, &.page-template-default{
     header#masthead {
@@ -91,7 +91,7 @@ body{
 
 .page-header {
   margin:0;//repalce botstrap style
-  padding:0;//repalce botstrap style
+  //padding:0;//repalce botstrap style
   border: none;//repalce botstrap style
 
   text-align: center;
@@ -137,7 +137,7 @@ section.page-banner{
   background-position: center center;
   background-size: cover;
 
-        .header-banner{
+  .header-banner{
         // background-image: url('images/footer-banner.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -145,20 +145,21 @@ section.page-banner{
         line-height: 350px;
         text-align: center;
         .header-banner-text {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: normal;
-            h1{
-                font-size: 72px;
-                color: #fff;
-            }
-            h3{
-                font-size: 30px;
-                color: #fff;
-            }
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal;
+          h1{
+            font-size: 62px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+          h3{
+            font-size: 30px;
+            color: #fff;
+          }
         }
+      }
     }
-}
 
 //Main slider (MS)
 .ms-container{

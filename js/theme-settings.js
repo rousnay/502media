@@ -238,63 +238,6 @@
 
     }
 
-
-
-    function grid_adjustment() {
-    //     var winWidth    = $(window).width();
-    //     if(winWidth > 767 ){
-
-    //         rW2 = $('.grid_size_22').height();
-    //         console.log(rW2);
-    //         rW2 = rW2 / 2;
-    //         rW2 = rW2 - 10; 
-    //     // rW2 = parseInt(rW2, 10);
-    //     $('.grid_size_11').height(rW2);
-    //     console.log(rW2);
-
-    // }else{
-
-    //         rW3 = $('.grid_size_12').height();
-    //         console.log(rW3);
-    //         rW3 = rW3 / 2;
-    //         rW3 = rW3 - 10; 
-    //     // rW2 = parseInt(rW2, 10);
-    //     $('.grid_size_11, .grid_size_22').height(rW3);
-
-
-    //     // $('#post-listing-isotope .post-item').matchHeight();
-
-    // }
-
-
-    // rW2 = $('.grid_size_22').height();
-    // console.log(rW2);
-    // rW2 = rW2 / 2;
-    // rW2 = rW2 - 10; 
-    //     // rW2 = parseInt(rW2, 10);
-    //     $('.grid_size_11').height(rW2);
-    //     console.log(rW2);
-        // rW = $('#post-listing-isotope').width();
-        // rW = rW / 2;
-        // rW = rW - 20; 
-        // rW = parseInt(rW, 10);
-        // $('.grid_size_12').width(rW);
-
-
-        // rW1 = $('#post-listing-isotope').width();
-        // rW1 = rW1 / 2;
-        // rW1 = rW1 - 20; 
-        // rW1 = parseInt(rW1, 10);
-        // $('.grid_size_11').width(rW1);
-
-        // rW2 = $('#post-listing-isotope').width();
-        // rW2 = rW2 / 2;
-        // rW2 = rW2 - 20; 
-        // rW2 = parseInt(rW2, 10);
-        // $('.grid_size_22').width(rW2);
-
-    }
-
     $(window).load(function() {
         home_banner_adjustment();
         $('.banner-text h1').css("visibility", "visible");

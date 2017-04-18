@@ -84,3 +84,18 @@
 				</div>
 			</div>
 		</section><!-- .page-banner -->
+
+		<section class="container page-header">
+			<div class="row">
+				<div class="col-xs-12">
+					<?php
+					if(get_field('intro_title')){
+						echo '<h1>' . get_field('intro_title') . '</h1>';
+					}
+					if(get_field('intro_paragraph')){
+						echo '<div class="para">' . get_field('intro_paragraph') . '</div>';
+					}
+					?>
+				</div>
+			</div>
+		</section><!-- .page-header -->
