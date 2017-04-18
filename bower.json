@@ -51,6 +51,7 @@
   "dependencies": {
     "isotope": "^3.0.1",
     "imagesloaded": "^4.1.0",
-    "gsap": "^1.19.0"
+    "gsap": "^1.19.0",
+    "isotope-packery": "^2.0.0"
   }
 }

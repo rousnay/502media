@@ -16,9 +16,9 @@
                 "id": ""
             },
             "choices": {
-                "11": "1x1",
-                "12": "1x2",
-                "22": "2x2"
+                "11": "Small (1\/4)",
+                "12": "Medium (2\/4)",
+                "22": "Large (3\/4)"
             },
             "default_value": [],
             "allow_null": 0,
@@ -46,5 +46,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492463538
+    "modified": 1492531369
 }

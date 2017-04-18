@@ -90,7 +90,9 @@ body.single-post{
 	}
 }
 .entry {
-	background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+	background-color: transparent;
 	h3{
 		font-family: Open Sans;
 		font-weight: 500;

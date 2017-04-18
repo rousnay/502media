@@ -24,7 +24,7 @@
         {
             "key": "field_58f52a750b416",
             "label": "Intro Paragraph",
-            "name": "intro_paragraph_",
+            "name": "intro_paragraph",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -59,6 +59,11 @@
                 "param": "page_template",
                 "operator": "!=",
                 "value": "page-template\/page-home.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-template\/page-work.php"
             }
         ],
         [
@@ -84,5 +89,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492462658
+    "modified": 1492509591
 }

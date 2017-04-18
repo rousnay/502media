@@ -32,6 +32,7 @@ function theme_502media_scripts() {
 
 	wp_enqueue_script( 'theme_502media-isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '', true );
 
+	wp_enqueue_script( 'theme_502media-isotope-packery-js', get_template_directory_uri() . '/js/packery-mode.pkgd.min.js', array('jquery'), '', true );
 	//wp_enqueue_script( 'theme_502media-gsap-tweenmax-js', get_template_directory_uri() . '/js/TweenMax.min.js', array('jquery'), '', true );
 
 	//wp_enqueue_script( 'theme_502media-nobounce-js', get_template_directory_uri() . '/js/noBounce.min.js', array('jquery'), '', true );

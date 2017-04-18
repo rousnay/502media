@@ -4,81 +4,107 @@
   body.page-template-page-home {
 
     .site-header{
-    .logo-area{
-      padding: 26px 0 26px 3px;
+      .logo-area{
+        padding: 26px 0 26px 3px;
+      }
+    }
+
+    &.gradient-bg
+    {
+      background-color: #d8d8d8;
+      width: 100%;
+      height: 100vh;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #masthead{
+
+    }
+    .site-content{
+      background-color: transparent!important;
+    }
+    .banner-text{
+      max-width: 750px;
+      margin: auto auto;
+      h1{
+        font-size: 54px;
+        color: #ffffff;
+        visibility: hidden;
+        text-align: center;
+      // transition: visibility 3500ms ease-in-out;
     }
   }
 
- &.gradient-bg
-{
-  background-color: #d8d8d8;
-  width: 100%;
-  height: 100vh;
-  padding: 0px;
-  margin: 0px;
-}
-
-#masthead{
-
-}
-.site-content{
-  background-color: transparent!important;
-}
-.banner-text{
-  max-width: 750px;
-  margin: auto auto;
-  h1{
-      font-size: 54px;
-      color: #ffffff;
-      visibility: hidden;
-      text-align: center;
-      // transition: visibility 3500ms ease-in-out;
+  #colophon, .page-banner{
+    display: none!important;
   }
-}
-
-#colophon, .page-banner{
-  display: none!important;
-}
-
 }
 
 
 /***********
-  Affiliations
+  Our Work
   ************/
-  body.page-template-page-affiliations{
-    .site-content{
-      background-color: #f4f4f4;
+  body.page-template-page-work{
+    .ours-work-contents {
+      margin: 20px auto;
     }
-    .affiliation-contents{
-      margin-top: 32px;
-      #logo-listing-isotope{
-        .isotope-item{
-          margin-bottom: 30px;
+    .post-item {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      overflow: hidden;
+      .thumbnail-hover {
+        position: relative;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        &:hover {
+          .overlay {
+            opacity: 0.4;
+          }
+          .thumb-cross {
+            opacity: 1;
+          }
         }
-        .affiliation-started {
-          text-align: center;
-          h2{
-            font-size: 24px;
-            font-weight: bold;
-            color: $color_theme_502media_black;
-            margin-bottom: 30px;
-            margin-top: 30px;
-          }
-          button{
-            background-color: transparent;
-            border: 2px solid #938055;
-            color: #938055;
-            font-family: $font2;
-            text-align: center;
-            letter-spacing: 1.5px;
-            padding: 15px 30px;
-            &:focus, &:hover {
-              background-color: #938055;
-              color: #ffffff;
-            }
-          }
+        .overlay {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background:$color_theme_502media_gradient;
+          opacity: 0;
+          transition: opacity 500ms ease-in-out;
+        }
+      }
+      .entry {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: transparent;
+        h3{
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+        h5{
+          color: #ffffff;
+          font-style: italic;
+
         }
       }
     }
   }
+
+  @media (max-width: 500px){
+
+   body.page-template-page-work .post-item {
+    width: 100% !important;
+  }
+
+}

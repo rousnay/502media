@@ -28,7 +28,7 @@
     /******************************
      Sidebar Push Slide
      ******************************/
-    function sideHeaderInit() {
+     function sideHeaderInit() {
         var sideheader = jQuery('#sideheader');
         if (sideheader.length) {
             sideheader.perfectScrollbar();
@@ -103,61 +103,20 @@
      Library: Isotope
      ******************************/
 
-    //  if ($.isFunction($.fn.imagesLoaded) ) {
+     if ($.isFunction($.fn.imagesLoaded) ) {
 
-    //  	var container	= '#post-listing-isotope';
-    //  	var selector	= '.post-item';
-    //  	var sizer 		= '.grid-sizer';
+     	var container	= '#post-listing-isotope';
 
-    //  	$(container).imagesLoaded( function() {
-    // 	// filter items when filter link is selected from dropdown
-    // 	$select = $('#filters-dropdown select');
-    // 	$(container).isotope({
-    // 		itemSelector: selector,
-    // 		percentPosition: true,
-    // 		masonry: {
-    // 			columnWidth: sizer
-    // 		},
-    // 	});
+     	$(container).imagesLoaded( function() {
+           $(container).isotope({
+            layoutMode: 'packery',
+            packery: {
 
-    // 	$select.change(function() {
-    // 		var filters = $(this).val();
-    // 		;
-    // 		$(container).isotope({
-    // 			filter: filters,
-    // 		});
-    // 	});
+            },
+        });
 
-    // 	// filter items when filter link is clicked
-    // 	$('#filters-link li').click(function(){
-    // 		$('#filters-link li.active').removeClass('active');
-    // 		var selector = $(this).attr('data-filter');
-    // 		$(container).isotope({ filter: selector, animationEngine : "css" });
-    // 		$(this).addClass('active');
-    // 		return false;
-    // 	});
-    // });
-    //  };
-
-    // 	// for affiliation logos
-    // 	if ($.isFunction($.fn.imagesLoaded) ) {
-
-    // 		var container1	= '#team-listing-isotope';
-    // 		var selector1	= '.isotope-item';
-
-    // 		$(container1).imagesLoaded( function() {
-    // 			$(container1).isotope({
-    // 				  // options...
-    // 				  itemSelector: selector1,
-    // 				  getSortData: {
-    // 				  	sortBy: 'original-order'
-    // 				  },
-    // 				  masonry: {
-    // 				  	columnWidth: selector1
-    // 				  }
-    // 				});
-    // 		});
-    // 	};
+       });
+     };
 
     /******************************
      Library: perfect-scrollbar
@@ -235,9 +194,9 @@
 
     if ($.isFunction($.fn.imagesLoaded)) {
 
-        $('#logo-listing-isotope .isotope-item').matchHeight();
-
-        $('#post-listing-isotope .post-item').matchHeight();
+        // $('#post-listing-isotope .post-item .grid_size_11').matchHeight();
+        // $('#post-listing-isotope .post-item .grid_size_12').matchHeight();
+        // $('#post-listing-isotope .post-item .grid_size_22').matchHeight();
 
         function equal_size() {
             var entryHeight = $('.page-template-page-blog #post-listing-isotope .post-item .entry').height();
@@ -245,10 +204,10 @@
             $('body.page-template-page-blog #post-listing-isotope .post-item .thumbnail').css('height', totalHeight);
         }
 
-        equal_size();
+        // equal_size();
 
         $(window).resize(function() {
-            equal_size();
+            // equal_size();
         });
     };
 
@@ -279,13 +238,72 @@
 
     }
 
+
+
+    function grid_adjustment() {
+    //     var winWidth    = $(window).width();
+    //     if(winWidth > 767 ){
+
+    //         rW2 = $('.grid_size_22').height();
+    //         console.log(rW2);
+    //         rW2 = rW2 / 2;
+    //         rW2 = rW2 - 10; 
+    //     // rW2 = parseInt(rW2, 10);
+    //     $('.grid_size_11').height(rW2);
+    //     console.log(rW2);
+
+    // }else{
+
+    //         rW3 = $('.grid_size_12').height();
+    //         console.log(rW3);
+    //         rW3 = rW3 / 2;
+    //         rW3 = rW3 - 10; 
+    //     // rW2 = parseInt(rW2, 10);
+    //     $('.grid_size_11, .grid_size_22').height(rW3);
+
+
+    //     // $('#post-listing-isotope .post-item').matchHeight();
+
+    // }
+
+
+    // rW2 = $('.grid_size_22').height();
+    // console.log(rW2);
+    // rW2 = rW2 / 2;
+    // rW2 = rW2 - 10; 
+    //     // rW2 = parseInt(rW2, 10);
+    //     $('.grid_size_11').height(rW2);
+    //     console.log(rW2);
+        // rW = $('#post-listing-isotope').width();
+        // rW = rW / 2;
+        // rW = rW - 20; 
+        // rW = parseInt(rW, 10);
+        // $('.grid_size_12').width(rW);
+
+
+        // rW1 = $('#post-listing-isotope').width();
+        // rW1 = rW1 / 2;
+        // rW1 = rW1 - 20; 
+        // rW1 = parseInt(rW1, 10);
+        // $('.grid_size_11').width(rW1);
+
+        // rW2 = $('#post-listing-isotope').width();
+        // rW2 = rW2 / 2;
+        // rW2 = rW2 - 20; 
+        // rW2 = parseInt(rW2, 10);
+        // $('.grid_size_22').width(rW2);
+
+    }
+
     $(window).load(function() {
         home_banner_adjustment();
         $('.banner-text h1').css("visibility", "visible");
+        // grid_adjustment();
     });
 
     $(window).resize(function() {
         home_banner_adjustment();
+        // grid_adjustment();
     });
 
 
