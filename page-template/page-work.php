@@ -9,19 +9,10 @@ get_header(); ?>
 <div id="content" class="site-content full-width">
 	<main id="main" class="site-main" role="main">
 
-		<section class="container page-header">
-			<div class="row">
-				<div class="col-xs-12">
-					<?php //while ( have_posts() ) : the_post(); the_content(); endwhile; ?>
-				</div>
-			</div>
-		</section><!-- .page-header -->
-
 		<section class="container ours-work-contents">
 			<div class="row content-holder">
 				<div class="col-sm-12">
 					<div class="row" id="post-listing-isotope">
-
 
 						<?php 
 						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
@@ -70,8 +61,7 @@ get_header(); ?>
 						?>
 
 						<div class="all post-item <?php echo $col_size; echo $tax; ?> ">
-
-							<div class="thumbnail thumbnail-hover" style="background-image: url('<?php echo $thumb_url; ?>'); ">
+							<div class="thumbnail thumbnail-hover">
 								<div class="img-holder">
 									<img class="img-responsive" src="<?php echo $thumb_url; ?>" >
 								</div>
@@ -84,10 +74,8 @@ get_header(); ?>
 								</div></a>
 								<a href="<?php echo $post_url ?>" title="<?php  the_title_attribute() ?>" class="overlay"></a>
 							</div>
-
 						</div>
 					<?php endwhile; ?>
-					<div class="grid-sizer col-xs-12 col-sm-3"></div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">

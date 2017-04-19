@@ -85,12 +85,12 @@
 			</div>
 		</section><!-- .page-banner -->
 
-		<section class="container page-header">
+		<section class="container page-header content-holder">
 			<div class="row">
 				<div class="col-xs-12">
 					<?php
 					if(get_field('intro_title')){
-						echo '<h1>' . get_field('intro_title') . '</h1>';
+						echo '<div class="text_score"><h1>' . get_field('intro_title') . '</h1><div class="u_score"></div> </div>';
 					}
 					if(get_field('intro_paragraph')){
 						echo '<div class="para">' . get_field('intro_paragraph') . '</div>';

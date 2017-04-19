@@ -30,11 +30,17 @@ body{
       margin: 0 -35px!important;
     }
   }
+  p{
+    // text-align: justify;
+  }
 }
 .container{
   width:100%!important;
 }
-
+div#content {
+  padding: 50px 0;
+  box-shadow: inset 0px 20px 10px -15px rgba(0,0,0,0.15);
+}
 
 .full-width {
   width: 100%!important;
@@ -42,7 +48,7 @@ body{
 .content-holder {
   width: 100%!important;
   max-width: 1070px!important;
-  margin: 0 auto;
+  margin: 0 auto!important;
 }
 .content-holder-half {
   width: 100%!important;
@@ -55,6 +61,19 @@ body{
 .left-sidebar {
   margin-top: 22px;
   padding-left: 0!important;
+}
+
+.text_score {
+  text-align: center;
+  h1{
+
+  }
+  .u_score{
+    box-sizing: border-box;
+    margin: 25px auto 40px;
+    width: 150px;
+    border: 1px solid #D38D29;
+  }
 }
 
 #sideheader {
@@ -91,13 +110,13 @@ body{
 
 .page-header {
   margin:0;//repalce botstrap style
-  //padding:0;//repalce botstrap style
+  padding-bottom:0;//repalce botstrap style
   border: none;//repalce botstrap style
 
   text-align: center;
   // padding-bottom: 32px;
   h1{
-    font-size: 30px;
+    // font-size: 30px;
     font-weight: bold;
     font-family: $font1;
     margin-top: 37px;
@@ -111,6 +130,10 @@ body{
     margin: 14px auto;
     padding: 0 15px;
   }
+  .para {
+    text-align: left;
+    margin-bottom: 60px;
+}
 }
 .page-contents {
   position: relative;
