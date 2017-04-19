@@ -37,3 +37,33 @@ header{
         padding-bottom: 5px;
     }
 }
+section.page-banner{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .header-banner{
+        // background-image: url('images/footer-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        line-height: 350px;
+        text-align: center;
+        .header-banner-text {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal;
+            h1{
+                font-size: 68px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            h3{
+                font-size: 24px;
+                color: #fff;
+                font-family: Didot;
+                font-style: italic;
+            }
+        }
+      }
+    }

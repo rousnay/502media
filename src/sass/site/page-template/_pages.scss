@@ -2,11 +2,12 @@
   Home
   *********/
   body.page-template-page-home {
+    // background: #000;
     overflow: hidden;
     height: 100vh;
     .site-header{
       .logo-area{
-        padding: 26px 0 26px 3px;
+        // padding: 26px 0 26px 3px;
       }
     }
 
@@ -26,10 +27,10 @@
       background-color: transparent!important;
     }
     .banner-text{
-      max-width: 750px;
+      max-width: 780px;
       margin: auto auto;
       h1{
-        font-size: 54px;
+        font-size: 64px;
         color: #ffffff;
         visibility: hidden;
         text-align: center;

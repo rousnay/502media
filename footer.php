@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class="row footer-edge">
-			<div class="col-sm-6 social-media-links">
+			<div class="col-xs-6 social-media-links">
 
 				<a href="#">
 					<span class="fa-stack fa-1x">
@@ -56,7 +56,7 @@
 				</a>
 
 			</div>
-			<div class="col-sm-6 get-in-touch">
+			<div class="col-xs-6 get-in-touch">
 				<a  href="#"> <span>Let's Get In Touch </span> <i class="fa fa-comment-o" aria-hidden="true"></i> </a>
 			</div>
 		</div>
