@@ -36,31 +36,26 @@
 		<div class="row footer-edge">
 			<div class="col-xs-6 social-media-links">
 
-				<a href="#">
+				<?php if( have_rows('social_media_links', 'option') ): 
+				while ( have_rows('social_media_links', 'option') ) : the_row();
+				$media_link = get_sub_field('media_link', 'option');
+				$social_media = get_sub_field('social_media', 'option');
+				?> 
+				<a href="<?php echo $media_link ?>">
 					<span class="fa-stack fa-1x">
 						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
-						<i class="fa fa-facebook fa-stack-1x"></i>
+						<i class="fa fa-<?php echo $social_media ?> fa-stack-1x"></i>
 					</span>
 				</a>
-				<a href="#">
-					<span class="fa-stack fa-1x">
-						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
-						<i class="fa fa-twitter fa-stack-1x"></i>
-					</span>
-				</a>
-				<a href="#">
-					<span class="fa-stack fa-1x">
-						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
-						<i class="fa fa-instagram fa-stack-1x"></i>
-					</span>
-				</a>
+			<?php endwhile; ?>
+		<?php endif; ?>
 
-			</div>
-			<div class="col-xs-6 get-in-touch">
-				<a  href="#"> <span>Let's Get In Touch </span> <i class="fa fa-comment-o" aria-hidden="true"></i> </a>
-			</div>
-		</div>
-	</section>
+	</div>
+	<div class="col-xs-6 get-in-touch">
+		<a  href="<?php the_field('get_in_touch_link', 'option') ?>"> <span>Let's Get In Touch </span> <i class="fa fa-comment-o" aria-hidden="true"></i> </a>
+	</div>
+</div>
+</section>
 </footer><!-- footer -->
 </div><!-- #page -->
 
@@ -86,6 +81,6 @@
 	});
 	//Google Analytics Codes
 
-</script>
+	</script>
 </body>
 </html>

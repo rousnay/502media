@@ -72,10 +72,10 @@ if( function_exists('acf_add_options_page') ) {
 		'icon_url' => 'dashicons-layout'
 		));
 	
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Affiliations Slider',
-		'menu_title'	=> 'Affiliations Slider',
-		'menu_slug' 	=> 'affiliations-slider',
-		'parent_slug'	=> 'theme_502media-general-settings',
-		));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Affiliations Slider',
+	// 	'menu_title'	=> 'Affiliations Slider',
+	// 	'menu_slug' 	=> 'affiliations-slider',
+	// 	'parent_slug'	=> 'theme_502media-general-settings',
+	// 	));
 }
