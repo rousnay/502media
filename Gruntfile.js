@@ -182,7 +182,8 @@ browserSync: {
 
     options: {
       watchTask: true,
-      proxy: 'http://192.168.0.101/502mediagroup/502media/'
+      // proxy: 'http://192.168.0.101/502mediagroup/502media/',
+      proxy: 'http://10.91.149.145/502mediagroup/502media/'
     }
   }
 },
