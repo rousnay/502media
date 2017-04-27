@@ -119,6 +119,13 @@ button#hamburger{
     background-color: transparent!important;
     border:none!important;
   }
+  .menu-title{
+    text-indent: 1px;
+    font-size: 11px;
+    position: absolute;
+    top:-15px;
+    color: #ffffff;
+  }
   span {
     top: 10px;
     left: 0px;
@@ -140,7 +147,9 @@ button#hamburger{
     }
   }
   &.is-active {
-
+.menu-title{
+  display: none;
+}
   span {
     background:none;
     &:before, &:after {

@@ -6607,8 +6607,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -10618,7 +10618,7 @@ Version: 0.1.0
 
 /* line 149, src/components/material-menu/_sass/sass/modules/_menu.scss */
 .mm-menu__item.item-10 {
-  transition: opacity 0.5s 1.0s, transform 0.5s 1.0s;
+  transition: opacity 0.5s 1s, transform 0.5s 1s;
 }
 
 /* line 149, src/components/material-menu/_sass/sass/modules/_menu.scss */
@@ -16057,6 +16057,14 @@ button#hamburger:hover, button#hamburger:active, button#hamburger:focus {
   border: none !important;
 }
 /* line 122, src/sass/navigation/_menus.scss */
+button#hamburger .menu-title {
+  text-indent: 1px;
+  font-size: 11px;
+  position: absolute;
+  top: -15px;
+  color: #ffffff;
+}
+/* line 129, src/sass/navigation/_menus.scss */
 button#hamburger span {
   top: 10px;
   left: 0px;
@@ -16064,7 +16072,7 @@ button#hamburger span {
   height: 4px;
   background: #fff;
 }
-/* line 128, src/sass/navigation/_menus.scss */
+/* line 135, src/sass/navigation/_menus.scss */
 button#hamburger span:before, button#hamburger span:after {
   left: 0;
   width: 100%;
@@ -16072,23 +16080,27 @@ button#hamburger span:before, button#hamburger span:after {
   background: #fff;
   content: "";
 }
-/* line 135, src/sass/navigation/_menus.scss */
+/* line 142, src/sass/navigation/_menus.scss */
 button#hamburger span:before {
   top: -10px;
 }
-/* line 138, src/sass/navigation/_menus.scss */
+/* line 145, src/sass/navigation/_menus.scss */
 button#hamburger span:after {
   bottom: -10px;
 }
-/* line 144, src/sass/navigation/_menus.scss */
+/* line 150, src/sass/navigation/_menus.scss */
+button#hamburger.is-active .menu-title {
+  display: none;
+}
+/* line 153, src/sass/navigation/_menus.scss */
 button#hamburger.is-active span {
   background: none;
 }
-/* line 149, src/sass/navigation/_menus.scss */
+/* line 158, src/sass/navigation/_menus.scss */
 button#hamburger.is-active span:before {
   top: 0px;
 }
-/* line 152, src/sass/navigation/_menus.scss */
+/* line 161, src/sass/navigation/_menus.scss */
 button#hamburger.is-active span:after {
   bottom: 0px;
 }

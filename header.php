@@ -27,7 +27,7 @@
 		<div class="sidebar-inner">
 			<div class="push_sidebar">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<div class="col-md-12 hidden--xs hidden--sm menu-area">
+					<div class="col-md-12 menu-area">
 						<?php theme_502media_header_menu(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
@@ -47,7 +47,9 @@
 				</div>
 				<div class="row header-menus">
 					<!-- <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button> -->
-					<button id="hamburger" class="c-hamburger c-hamburger--htx"><span>toggle menu</span></button>
+					<button id="hamburger" class="c-hamburger c-hamburger--htx">
+						<div class="menu-title">MENU</div>
+						<span>toggle menu</span></button>
 				</div>
 
 			</div>
