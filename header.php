@@ -48,7 +48,7 @@
 				<div class="row header-menus">
 					<!-- <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button> -->
 					<button id="hamburger" class="c-hamburger c-hamburger--htx">
-						<div class="menu-title">MENU</div>
+						<div class="menu-title"> <div class="mn-open">MENU</div><div class="mn-close">CLOSE</div></div>
 						<span>toggle menu</span></button>
 				</div>
 

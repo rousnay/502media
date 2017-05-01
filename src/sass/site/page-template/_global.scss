@@ -83,8 +83,8 @@ div#content {
   bottom: 0;
   display: none;
   height: 100%;
-  width: 300px;
-  padding: 50px 35px;
+  width: 280px;
+  padding: 0px 35px;
   z-index: 0;
   background: #444349;
   color: white;
@@ -147,7 +147,7 @@ div#content {
 
 .sideheader-visible {
   .content-wrapper {
-    transform: translateX(-300px);
+    transform: translateX(-280px);
     &:after {
       opacity: 1;
       visibility: visible;
