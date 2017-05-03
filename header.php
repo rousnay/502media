@@ -31,6 +31,7 @@
 						<?php theme_502media_header_menu(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
+				<?php dynamic_sidebar( 'push_sidebar_widgets' ); ?>
 			</div>
 		</div>
 	</div>
