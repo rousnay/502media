@@ -80,26 +80,6 @@
 
 
     /******************************
-     Library: owl.carousel
-     ******************************/
-
-    //  $("#company-logo-slider").owlCarousel({
-    //  	items : 4,
-    //  	navigation : true,
-    //  	itemsTablet: [768,4],
-    //  	itemsTabletSmall: [600,3],
-    //  	itemsMobile : [400,2],
-    //  	singleItem : false,
-    //  	itemsScaleUp : false,
-    //  	navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    //  });
-
-    // //
-    // document.addEventListener("touchstart", function(){}, true);
-
-
-
-    /******************************
      Library: Isotope
      ******************************/
 

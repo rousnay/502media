@@ -8,19 +8,19 @@ function theme_502media_scripts() {
 
 	wp_enqueue_style( 'theme_502media-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('theme_502media-google-fonts-questrial', 'https://fonts.googleapis.com/css?family=Questrial');
+	//wp_enqueue_style('theme_502media-google-fonts-questrial', 'https://fonts.googleapis.com/css?family=Questrial');
 
-	wp_enqueue_style('theme_502media-google-fonts-raleway', 'https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,600,100');
+	// wp_enqueue_style('theme_502media-google-fonts-raleway', 'https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,600,100');
 
-	wp_enqueue_style('theme_502media-google-fonts-montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
+	// wp_enqueue_style('theme_502media-google-fonts-montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 	wp_enqueue_script( 'theme_502media-classList-js', 'https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js', array('jquery'), '');
 
 	wp_enqueue_script( 'theme_502media-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 
-	wp_enqueue_script( 'theme_502media-material-menu-js', get_template_directory_uri() . '/js/materialMenu.min.js', array('jquery'), '', true );
+	//wp_enqueue_script( 'theme_502media-material-menu-js', get_template_directory_uri() . '/js/materialMenu.min.js', array('jquery'), '', true );
 
-	wp_enqueue_script( 'theme_502media-owl-carousel-js', get_template_directory_uri() . '/js/owl-carousel.min.js', array('jquery'), '', true );
+	//wp_enqueue_script( 'theme_502media-owl-carousel-js', get_template_directory_uri() . '/js/owl-carousel.min.js', array('jquery'), '', true );
 
 	//wp_enqueue_script( 'theme_502media-bPopup-js', get_template_directory_uri() . '/js/jquery.bpopup.min.js', array('jquery'), '', true );
 
@@ -33,6 +33,7 @@ function theme_502media_scripts() {
 	wp_enqueue_script( 'theme_502media-isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '', true );
 
 	wp_enqueue_script( 'theme_502media-isotope-packery-js', get_template_directory_uri() . '/js/packery-mode.pkgd.min.js', array('jquery'), '', true );
+
 	//wp_enqueue_script( 'theme_502media-gsap-tweenmax-js', get_template_directory_uri() . '/js/TweenMax.min.js', array('jquery'), '', true );
 
 	//wp_enqueue_script( 'theme_502media-nobounce-js', get_template_directory_uri() . '/js/noBounce.min.js', array('jquery'), '', true );
