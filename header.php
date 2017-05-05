@@ -32,6 +32,23 @@
 					</div>
 				</nav><!-- #site-navigation -->
 				<?php dynamic_sidebar( 'push_sidebar_widgets' ); ?>
+				
+				<div class="social-media-links">
+				<?php if( have_rows('social_media_links', 'option') ): 
+				while ( have_rows('social_media_links', 'option') ) : the_row();
+				$media_link = get_sub_field('media_link', 'option');
+				$social_media = get_sub_field('social_media', 'option');
+				?> 
+				<a href="<?php echo $media_link ?>">
+					<span class="fa-stack fa-1x">
+						<i class="fa fa-circle-thin fa-stack-2x icon-background6"></i>
+						<i class="fa fa-<?php echo $social_media ?> fa-stack-1x"></i>
+					</span>
+				</a>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
+
 			</div>
 		</div>
 	</div>

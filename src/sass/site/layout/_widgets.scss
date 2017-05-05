@@ -1,1 +1,25 @@
 //widgets
+.push_sidebar {
+	h3.widget-title {
+		color: #fff;
+		font-family: Didot;
+		font-size: 23px;
+		font-style: italic;
+		margin-bottom: 25px;
+	}
+	.textwidget {
+		color: #BCBEC0;
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 40px;
+	}
+	.social-media-links{
+		a, .icon-background6 {
+			color: #BCBEC0;
+		}
+		a {
+			margin-right: 10px;
+		}
+
+	}
+}

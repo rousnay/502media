@@ -264,6 +264,21 @@ iframe{
 }
 
 
+//social links
+  .social-media-links{
+    a, .icon-background6 {
+      transition: color 200ms ease-in-out;
+    }
+    a {
+      &:hover{
+        color: $color_theme_502media_yellow;
+        .icon-background6 {
+          color: $color_theme_502media_yellow;
+        }
+      }
+    }
+  }
+
 @media (min-width: 1118px) and (max-width: 1260px){
   .banner-card {
     left: calc( 543px - ( 100vw / 2 )) !important;

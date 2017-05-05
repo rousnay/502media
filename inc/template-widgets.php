@@ -26,7 +26,7 @@ function push_sidebar_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '<i class="fa fa-comment-o" aria-hidden="true"></i></h3>',
+		'after_title' => ' <i class="fa fa-comment-o" aria-hidden="true"></i></h3>',
 	) );
 }
 add_action( 'widgets_init', 'push_sidebar_widgets_init' );
